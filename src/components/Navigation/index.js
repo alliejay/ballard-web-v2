@@ -1,12 +1,52 @@
 import React from 'react';
 import './styles.scss';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const Navigation = () => {
   return (
     <div className="navigation">
-      <h3>navigation</h3>
+      <Router>
+        <div>
+          <nav>
+            <ul className="nav-list">
+              <li><Link to="/">ABOUT</Link></li>
+              <li><Link to="/customer-service">CUSTOMER SERVICE</Link></li>
+              <li><Link to="/contact">CONTACT</Link></li>
+            </ul>
+          </nav>
+
+          <Switch>
+            <Route path="/">
+              <About />
+            </Route>
+            <Route path="/customer-service">
+              <CustomerService />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     </div>
   )
 };
+
+function About() {
+  return <h2>Home</h2>;
+}
+
+function Contact() {
+  return <h2>Contact</h2>;
+}
+
+function CustomerService() {
+  return <h2>Customer Service</h2>;
+}
 
 export default Navigation;

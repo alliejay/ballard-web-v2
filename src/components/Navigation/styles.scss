@@ -2,3 +2,12 @@
   height: 100px;
   background-color: #f7f9fB;
 }
+
+.nav-list {
+  display: inline-block;
+  li {
+    display: inline-block;
+    margin: auto 20px;
+    line-height: 100px;
+  }
+}
