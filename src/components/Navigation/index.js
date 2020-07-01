@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import About from '../../components/About/index.js';
 
 const Navigation = () => {
   return (
@@ -36,10 +37,6 @@ const Navigation = () => {
     </div>
   )
 };
-
-function About() {
-  return <h2>Home</h2>;
-}
 
 function Contact() {
   return <h2>Contact</h2>;

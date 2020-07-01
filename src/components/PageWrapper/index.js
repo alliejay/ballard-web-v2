@@ -6,7 +6,6 @@ const PageWrapper = () => {
   return (
     <div>
       <Navigation/>
-      <h1>Some sort of welcome message / image</h1>
     </div>
   )
 };
