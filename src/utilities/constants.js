@@ -1,0 +1,1 @@
+export const SHOP_BASE_URL = "https://shopballardpacific.com/collections/";

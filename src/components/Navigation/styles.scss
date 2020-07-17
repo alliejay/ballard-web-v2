@@ -3,6 +3,31 @@
   background-color: #f7f9fB;
 }
 
+.nav-logo {
+  width: 30%;
+  position: relative;
+  left: 5%;
+  line-height: 100px;
+  h2 {
+    display: inline;
+  }
+}
+
+.nav {
+  width: 60%;
+  position: relative;
+  left: 65%;
+  text-align: right;
+}
+
+.logo {
+  text-align: left;
+}
+
+.nav-logo, .nav {
+  display: inline;
+}
+
 .nav-list {
   display: inline-block;
   li {
@@ -10,4 +35,9 @@
     margin: auto 20px;
     line-height: 100px;
   }
+}
+
+.page-wrapper {
+  padding-top: 40px;
+  padding-left: 50px;
 }

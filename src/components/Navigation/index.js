@@ -7,43 +7,44 @@ import {
   Link
 } from "react-router-dom";
 import About from '../../components/About/index.js';
+import CustomerService from '../../components/CustomerService/index.js';
+import Contact from '../../components/Contact/index.js';
 
 const Navigation = () => {
   return (
     <div className="navigation">
       <Router>
         <div>
-          <nav>
-            <ul className="nav-list">
-              <li><Link to="/">ABOUT</Link></li>
-              <li><Link to="/customer-service">CUSTOMER SERVICE</Link></li>
-              <li><Link to="/contact">CONTACT</Link></li>
-            </ul>
-          </nav>
+          <div>
+            <div className="nav-logo">
+              <h2 className="logo">LOGO</h2>
+            </div>
+            <div className="nav">
+              <ul className="nav-list">
+                <li><Link to="/">ABOUT</Link></li>
+                <li><Link to="/customer-service">CUSTOMER SERVICE</Link></li>
+                <li><Link to="/contact">CONTACT</Link></li>
+              </ul>
+            </div>
+          </div>
 
-          <Switch>
-            <Route path="/">
-              <About />
-            </Route>
-            <Route path="/customer-service">
-              <CustomerService />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-          </Switch>
+          <div className="page-wrapper">
+            <Switch>
+              <Route path="/customer-service">
+                <CustomerService />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+              <Route path="/">
+                <About />
+              </Route>
+            </Switch>
+          </div>
         </div>
       </Router>
     </div>
   )
 };
-
-function Contact() {
-  return <h2>Contact</h2>;
-}
-
-function CustomerService() {
-  return <h2>Customer Service</h2>;
-}
 
 export default Navigation;
