@@ -8,7 +8,8 @@ import {
 } from "react-router-dom";
 import About from '../../components/About/index.js';
 import CustomerService from '../../components/CustomerService/index.js';
-import Contact from '../../components/Contact/index.js';
+import Products from '../Products/index.js';
+import Brands from '../../components/Brands/index.js';
 
 const Navigation = () => {
   return (
@@ -17,13 +18,12 @@ const Navigation = () => {
         <div>
           <div>
             <div className="nav-logo">
-              <h2 className="logo">LOGO</h2>
+              <Link to="/"><h2 className="logo">LOGO</h2></Link>
             </div>
             <div className="nav">
               <ul className="nav-list">
-                <li><Link to="/">ABOUT</Link></li>
                 <li><Link to="/customer-service">CUSTOMER SERVICE</Link></li>
-                <li><Link to="/contact">CONTACT</Link></li>
+                <li><Link to="/products">PRODUCTS</Link></li>
               </ul>
             </div>
           </div>
@@ -33,8 +33,11 @@ const Navigation = () => {
               <Route path="/customer-service">
                 <CustomerService />
               </Route>
-              <Route path="/contact">
-                <Contact />
+              <Route path="/products">
+                <Products />
+              </Route>
+              <Route path="/brands">
+                <Brands />
               </Route>
               <Route path="/">
                 <About />
