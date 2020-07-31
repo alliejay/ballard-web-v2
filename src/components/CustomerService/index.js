@@ -1,32 +1,39 @@
 import React from 'react';
 import DropDown from '../../components/Dropdown/index.js';
 import { models } from '../../utilities/models.js';
+import { Button } from 'antd';
+import { Link } from "react-router-dom";
+
 import './styles.scss';
 
 const CustomerService = () => {
   return (
     <div>
       <h1>Customer Service</h1>
-      <h2>Looking for product manuals or parts? We can help.</h2>
 
-      <br /><br />
+      <h2>(620) 432-3756</h2>
+      <a href="http://customerfirstservice.com/" target="new">Customer First Service</a>
 
-      <h3>
-        <DropDown options={models} label="Select product to view manual"/> {/* TODO need to pass manuals & direct to manual pages */}
-      </h3>
-
-      <h3>
-        <DropDown options={models} label="Search for parts"/>
-      </h3>
-
-      <h3>
-        <a href="https://www.youtube.com/user/customerfirstservice" target="new"><span className="youtube-icon"/> Instructional Videos</a>
-      </h3>
-
-      <br /><br />
+      <br />
+      <Link to="/assembly-videos">
+        <Button>Assembly Videos</Button>
+      </Link>
 
     </div>
   )
 };
 
 export default CustomerService;
+
+
+{/*<h3>*/}
+  {/*<DropDown options={models} label="Select product to view manual"/>
+{/*</h3>*/}
+
+{/*<h3>*/}
+{/*<DropDown options={models} label="Search for parts"/>*/}
+  {/*</h3>*/}
+
+  {/*<h3>*/}
+  {/*<a href="https://www.youtube.com/user/customerfirstservice" target="new"><span className="youtube-icon"/> Instructional Videos</a>*/}
+{/*</h3>*/}

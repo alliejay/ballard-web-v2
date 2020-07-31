@@ -7,9 +7,10 @@ import { PARENT_COMPANIES, BRANDS, transformData, eros, bikes } from '../../util
 import { forEach as _forEach, sortBy as _sortBy } from 'lodash';
 import './styles.scss';
 
-const ProductSearch = (props) => {
+const AssemblyVideos = () => {
+
   const location = useLocation();
-  const searchTerm = location.state.searchTerm ? location.state.searchTerm : ALL;
+  const searchTerm = location.state ? location.state.searchTerm : ALL;
 
   const [search, setSearchTerm] = useState(searchTerm);
   const [data, setData] = useState([]);
@@ -23,7 +24,7 @@ const ProductSearch = (props) => {
   };
 
   useEffect(() => {
-    const productInformation = transformData(selectedBrand, "products", search)
+    const productInformation = transformData(selectedBrand, "videos", search)
     setData(productInformation.data);
     setProductTypes(productInformation.productTypes)
   }, [selectedBrand, search]);
@@ -42,18 +43,17 @@ const ProductSearch = (props) => {
 
   useEffect(() => {
     setCards(data.map((item, index) => {
-      return <Card
+      console.log("item", item)
+      if(item.assemblyVideo) {
+        return <Card
         className="productCard"
         title={item.name}
         size="small"
-        style={{ width: 450 }}
+        style={{ width: 590 }}
         key={index}>
-        <div className="coverImage"><img src={item.image} /></div>
-        <div className="links">
-        <a href={item.walmartLink} target="new">Buy From Walmart</a>
-        {item.assemblyVideo && <a className="assemblyLink" href={item.assemblyVideo} target="new">View Assembly Video</a>}
-        </div>
-      </Card>
+          <div className="videoThumbnail">{item.videoEmbed}</div>
+        </Card>
+      }
     }));
   }, [data]);
 
@@ -95,8 +95,6 @@ const ProductSearch = (props) => {
 
     </div>
   )
-
-
 };
 
-export default ProductSearch;
+export default AssemblyVideos;

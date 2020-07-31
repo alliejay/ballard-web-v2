@@ -11,6 +11,7 @@ import CustomerService from '../../components/CustomerService/index.js';
 import Products from '../Products/index.js';
 import Brands from '../../components/Brands/index.js';
 import ProductSearch from '../ProductSearch/index.js';
+import AssemblyVideos from '../AssemblyVideos/index';
 
 const Navigation = () => {
   return (
@@ -42,6 +43,9 @@ const Navigation = () => {
               </Route>
               <Route path="/product-search">
                 <ProductSearch />
+              </Route>
+              <Route path="/assembly-videos">
+                <AssemblyVideos />
               </Route>
               <Route path="/">
                 <About />

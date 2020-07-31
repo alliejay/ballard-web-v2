@@ -1,3 +1,4 @@
+import React from 'react';
 import { forEach as _forEach, find as _find } from 'lodash';
 import honda6vt from '../img/products/honda-6vt.jpeg';
 import honda12vt from '../img/products/honda12vt.jpeg';
@@ -10,6 +11,7 @@ const walmartLink = "walmartLink";
 const assemblyVideo = "assemblyVideo";
 export const eros = "electricRideOns";
 export const bikes = "bikes";
+const videoEmbed = "videoEmbed"
 
 const HONDA_EROS = [
   {
@@ -35,7 +37,8 @@ const YAMAHA_EROS = [
     [productName]: "12 Volt Yamaha Raptor Battery Powered Ride-on Black/Green",
     [productImage]: yamaha12vt,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-Raptor-Battery-Powered-Ride-on-Black-Green-New-Custom-Graphic-Design/861364225",
-    [assemblyVideo]: ""
+    [assemblyVideo]: "https://www.youtube.com/watch?v=PKt23RVY__w",
+    [videoEmbed]: <iframe width="560" height="315" src="https://www.youtube.com/embed/PKt23RVY__w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   }
 ];
 
@@ -44,7 +47,8 @@ const YAMAHA_BIKES = [
     [productName]: 'Yamaha 12" Moto BMX Boys Bike, Blue',
     [productImage]: yamahabikeblue,
     [walmartLink]: "https://www.walmart.com/ip/Yamaha-12-Moto-BMX-Boys-Bike-Blue/17242520",
-    [assemblyVideo]: ""
+    [assemblyVideo]: "https://youtu.be/NyrBgppnTHY",
+    [videoEmbed]: <iframe width="560" height="315" src="https://www.youtube.com/embed/NyrBgppnTHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   }
 ];
 
@@ -131,13 +135,15 @@ export const transformData = (category, target, productType = null) => {
           let item = {
             name: product[productName],
             image: product[productImage],
-            walmartLink: product[walmartLink]
+            walmartLink: product[walmartLink],
+            assemblyVideo: product[assemblyVideo]
           };
           data.push(item)
         } else if(target == "videos") {
           let video = {
             name: product[productName],
-            assemblyVideo: product[assemblyVideo]
+            assemblyVideo: product[assemblyVideo],
+            videoEmbed: product[videoEmbed]
           };
           data.push(video)
         }
@@ -148,13 +154,15 @@ export const transformData = (category, target, productType = null) => {
           let item = {
             name: product[productName],
             image: product[productImage],
-            walmartLink: product[walmartLink]
+            walmartLink: product[walmartLink],
+            assemblyVideo: product[assemblyVideo]
           };
           data.push(item)
         } else if(target == "videos") {
           let video = {
             name: product[productName],
-            assemblyVideo: product[assemblyVideo]
+            assemblyVideo: product[assemblyVideo],
+            videoEmbed: product[videoEmbed]
           };
           data.push(video)
         }
