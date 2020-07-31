@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import './styles.scss';
 
 const Products = () => {
+
   return (
     <div>
       <div className="homescreen-btns">
@@ -11,10 +12,10 @@ const Products = () => {
           <Link to="/brands">BRANDS</Link>
         </Button>
         <Button block className="homescreen-btn">
-          <Link to="/customer-service">ELECTRIC RIDE ONS</Link>
+          <Link to={{ pathname: "/product-search", state: { searchTerm: "eros" }}}>ELECTRIC RIDE ONS</Link>
         </Button>
         <Button block className="homescreen-btn">
-          <Link to="/customer-service">BICYCLES</Link>
+          <Link to={{ pathname: "/product-search", state: { searchTerm: "bikes" }}}>BICYCLES</Link>
         </Button>
       </div>
     </div>

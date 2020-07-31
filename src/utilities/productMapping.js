@@ -1,4 +1,4 @@
-import { forEach as _foreach, find as _find } from 'lodash';
+import { forEach as _forEach, find as _find } from 'lodash';
 
 const productName = "productName";
 const productImage = "productImage";
@@ -78,14 +78,14 @@ const YAMAHA_PRODUCTS = {
   [bikes]: YAMAHA_BIKES
 };
 
-const PARENT_COMPANIES = [
+export const PARENT_COMPANIES = [
   {
     name: "Action Wheels",
     productList: [HONDA_PRODUCTS, YAMAHA_PRODUCTS]
   }
 ];
 
-const BRANDS = [
+export const BRANDS = [
   {
     name: "Honda",
     productList: [HONDA_PRODUCTS]
@@ -111,7 +111,7 @@ export const transformData = (category, target, productType = null) => {
     }
   });
 
-  _foreach(BRANDS, (brand) => {
+  _forEach(BRANDS, (brand) => {
     if(brand == category) {
       searchList = BRANDS;
     }

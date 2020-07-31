@@ -10,6 +10,7 @@ import About from '../../components/About/index.js';
 import CustomerService from '../../components/CustomerService/index.js';
 import Products from '../Products/index.js';
 import Brands from '../../components/Brands/index.js';
+import ProductSearch from '../ProductSearch/index.js';
 
 const Navigation = () => {
   return (
@@ -38,6 +39,9 @@ const Navigation = () => {
               </Route>
               <Route path="/brands">
                 <Brands />
+              </Route>
+              <Route path="/product-search">
+                <ProductSearch />
               </Route>
               <Route path="/">
                 <About />

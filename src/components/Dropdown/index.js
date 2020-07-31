@@ -8,10 +8,10 @@ const DropDown = ({options, label}) => {
   const menu = (
     <Menu>
       {options.map((option, index) => {
-          const url = `${SHOP_BASE_URL}/${option.urlParam}`;
+          {/*const url = `${SHOP_BASE_URL}/${option.urlParam}`;*/}
           return (
             <Menu.Item key={index}>
-              <a href={url}>{option.label}</a>
+              {option.label}
             </Menu.Item>
           )
       })}
@@ -19,11 +19,11 @@ const DropDown = ({options, label}) => {
   );
 
  return (
-   <div>
+   <div className="dropdown-container">
      <p className="label">{label}: </p>
      <Dropdown overlay={menu} trigger={['click']} className="dropdown">
       <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-       Select Product <DownOutlined />
+       Select Brand <DownOutlined />
       </a>
      </Dropdown>
    </div>
