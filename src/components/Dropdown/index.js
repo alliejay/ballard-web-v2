@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { SHOP_BASE_URL } from '../../utilities/constants';
 import './styles.scss';
 
-const DropDown = ({options, label}) => {
+const DropDown = ({options, label, handleClick, selectText}) => {
+
   const menu = (
-    <Menu>
+    <Menu onClick={handleClick}>
       {options.map((option, index) => {
           {/*const url = `${SHOP_BASE_URL}/${option.urlParam}`;*/}
           return (
-            <Menu.Item key={index}>
+            <Menu.Item key={option.label}>
               {option.label}
             </Menu.Item>
           )
@@ -23,7 +24,7 @@ const DropDown = ({options, label}) => {
      <p className="label">{label}: </p>
      <Dropdown overlay={menu} trigger={['click']} className="dropdown">
       <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-       Select Brand <DownOutlined />
+        {selectText} <DownOutlined />
       </a>
      </Dropdown>
    </div>

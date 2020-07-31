@@ -1,3 +1,22 @@
+.productSearchFilter {
+  display: block;
+}
+
 .productSearchButton {
   margin-right: 15px;
+}
+
+.productCard.ant-card {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.coverImage {
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: 50% 50%;
+  img {
+    width: 100%;
+  }
 }

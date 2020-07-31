@@ -1,21 +1,28 @@
 import React, { Component, useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import DropDown from '../../components/Dropdown/index.js';
-import { Button } from 'antd';
+import { Button, Card, Col, Row } from 'antd';
 import { EROS, BIKES, ALL } from '../../utilities/constants';
-import { PARENT_COMPANIES, BRANDS } from '../../utilities/productMapping';
+import { PARENT_COMPANIES, BRANDS, transformData, eros, bikes } from '../../utilities/productMapping';
 import { forEach as _forEach, sortBy as _sortBy } from 'lodash';
 import './styles.scss';
 
 const ProductSearch = (props) => {
-
+  const { Meta } = Card;
   const location = useLocation();
   const searchTerm = location.state.searchTerm ? location.state.searchTerm : 'all';
   const [search, setSearchTerm] = useState(searchTerm);
+  const [data, setData] = useState([]);
+  const [cards, setCards] = useState();
+
+  const [selectText, setSelectText] = useState("Select Brand");
+
+  const handleClick = (item) => {
+    setSelectText(item.key)
+  };
 
   useEffect(() => {
-    // search again
-    console.log("useEffect", search)
+    setData(transformData(selectText, "products", search));
   }, [search]);
 
   const handleButtonClick = (selection) => {
@@ -34,22 +41,41 @@ const ProductSearch = (props) => {
     return list;
   };
 
+  useEffect(() => {
+    setCards(data.map((item, index) => {
+      return <Card
+        className="productCard"
+        title={item.name}
+        size="small"
+        style={{ width: 450 }}
+        key={index}>
+        <div className="coverImage"><img src={item.image} /></div>
+        <a href={item.walmartLink} target="new">Buy From Walmart</a>
+        {item.assemblyVideo && <a href="/">View Assembly Video</a>}
+      </Card>
+    }));
+  }, [data]);
+
   return (
-    <div>
-      <h1>Product Search</h1>
+    <div className="productSearchContainer">
+      <div className="productSearchFilter">
+        <DropDown
+          label="Search Brands"
+          options={createBrandList()}
+          selectText={selectText}
+          handleClick={handleClick}/>
+        <Button type={search == ALL && 'primary'}
+                onClick={() => handleButtonClick(ALL)}
+                className="productSearchButton">ALL</Button>
+        <Button type={search == eros && 'primary'}
+                onClick={() => handleButtonClick(eros)}
+                className="productSearchButton">ELECTRIC RIDE ONS</Button>
+        <Button type={search == bikes && 'primary'}
+                onClick={() => handleButtonClick(bikes)}
+                className="productSearchButton">BICYCLES</Button>
+      </div>
 
-      <DropDown label="Search" options={createBrandList()}/>
-
-      <Button type={search == ALL && 'primary'}
-              onClick={() => handleButtonClick(ALL)}
-              className="productSearchButton">ALL</Button>
-      <Button type={search == EROS && 'primary'}
-              onClick={() => handleButtonClick(EROS)}
-              className="productSearchButton">ELECTRIC RIDE ONS</Button>
-      <Button type={search == BIKES && 'primary'}
-              onClick={() => handleButtonClick(BIKES)}
-              className="productSearchButton">BICYCLES</Button>
-
+      {cards}
 
     </div>
   )
