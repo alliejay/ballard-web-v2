@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
 import { Link } from "react-router-dom";
+import { eros, bikes } from "../../utilities/productMapping";
 import './styles.scss';
 
 const Products = () => {
@@ -12,10 +13,10 @@ const Products = () => {
           <Link to="/brands">BRANDS</Link>
         </Button>
         <Button block className="homescreen-btn">
-          <Link to={{ pathname: "/product-search", state: { searchTerm: "eros" }}}>ELECTRIC RIDE ONS</Link>
+          <Link to={{ pathname: "/product-search", state: { searchTerm: eros }}}>ELECTRIC RIDE ONS</Link>
         </Button>
         <Button block className="homescreen-btn">
-          <Link to={{ pathname: "/product-search", state: { searchTerm: "bikes" }}}>BICYCLES</Link>
+          <Link to={{ pathname: "/product-search", state: { searchTerm: bikes }}}>BICYCLES</Link>
         </Button>
       </div>
     </div>

@@ -1,6 +1,8 @@
 import { forEach as _forEach, find as _find } from 'lodash';
 import honda6vt from '../img/products/honda-6vt.jpeg';
 import honda12vt from '../img/products/honda12vt.jpeg';
+import yamaha12vt from '../img/products/yamaha12vt.jpeg';
+import yamahabikeblue from '../img/products/yamahabikeblue.jpeg';
 
 const productName = "productName";
 const productImage = "productImage";
@@ -30,30 +32,18 @@ const HONDA_PRODUCTS = {
 
 const YAMAHA_EROS = [
   {
-    [productName]: "6 Volt Black Honda TRX Battery Powered Ride-On ATV",
-    [productImage]: "",
-    [walmartLink]: "",
-    [assemblyVideo]: ""
-  },
-  {
-    [productName]: "12 VOLT HONDA TALON UTV - Honda Official Licensed Product",
-    [walmartLink]: "https://www.walmart.com/ip/12-VOLT-HONDA-TALON-UTV-Honda-Official-Licensed-Product/577126686",
-    [productImage]: "",
+    [productName]: "12 Volt Yamaha Raptor Battery Powered Ride-on Black/Green",
+    [productImage]: yamaha12vt,
+    [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-Raptor-Battery-Powered-Ride-on-Black-Green-New-Custom-Graphic-Design/861364225",
     [assemblyVideo]: ""
   }
 ];
 
 const YAMAHA_BIKES = [
   {
-    [productName]: "6 Volt Black Honda TRX Battery Powered Ride-On ATV",
-    [productImage]: "",
-    [walmartLink]: "",
-    [assemblyVideo]: ""
-  },
-  {
-    [productName]: "12 VOLT HONDA TALON UTV - Honda Official Licensed Product",
-    [walmartLink]: "https://www.walmart.com/ip/12-VOLT-HONDA-TALON-UTV-Honda-Official-Licensed-Product/577126686",
-    [productImage]: "",
+    [productName]: 'Yamaha 12" Moto BMX Boys Bike, Blue',
+    [productImage]: yamahabikeblue,
+    [walmartLink]: "https://www.walmart.com/ip/Yamaha-12-Moto-BMX-Boys-Bike-Blue/17242520",
     [assemblyVideo]: ""
   }
 ];
@@ -86,11 +76,11 @@ export const BRANDS = [
 export const transformData = (category, target, productType = null) => {
   let searchList = PARENT_COMPANIES;
   let data = [];
-  let productList = [];
-
-  console.log("category", category)
-  console.log("target", target)
-  console.log("productType", productType)
+  let productList = {
+    [eros]: [],
+    [bikes]: []
+  };
+  let productTypes = ['all'];
 
   // category can be parent company or brand
   // target can be products or assembly videos
@@ -98,26 +88,43 @@ export const transformData = (category, target, productType = null) => {
 
   if(category == "Select Brand") {
     _forEach(PARENT_COMPANIES, (company) => {
-        productList.push(company.productList[0])
+      _forEach(company.productList, (item) => {
+        _forEach(item[eros], (ero) => {
+          productList[eros].push(ero)
+        });
+
+        _forEach(item[bikes], (bike) => {
+          productList[bikes].push(bike)
+        })
+      })
     });
   }
 
   _forEach(PARENT_COMPANIES, (company) => {
     if(company.name == category) {
       searchList = PARENT_COMPANIES;
-      productList = _find(searchList, {'name': category}).productList;
+      _forEach(company.productList, (item) => {
+        _forEach(item[eros], (ero) => {
+          productList[eros].push(ero)
+        });
+
+        _forEach(item[bikes], (bike) => {
+          productList[bikes].push(bike)
+        })
+      })
     }
   });
 
   _forEach(BRANDS, (brand) => {
     if(brand.name == category) {
       searchList = BRANDS;
-      productList = _find(searchList, {'name': category}).productList;
+      productList = _find(searchList, {'name': category}).productList[0];
     }
   });
 
+  _forEach(productList, (products, productKey) => {
+    productTypes.push(productKey);
 
-  _forEach(productList[0], (products, productKey) => {
     if(productType == productKey) {
       _forEach(products, (product) => {
         if(target == "products") {
@@ -126,7 +133,6 @@ export const transformData = (category, target, productType = null) => {
             image: product[productImage],
             walmartLink: product[walmartLink]
           };
-          console.log("item", item)
           data.push(item)
         } else if(target == "videos") {
           let video = {
@@ -144,7 +150,6 @@ export const transformData = (category, target, productType = null) => {
             image: product[productImage],
             walmartLink: product[walmartLink]
           };
-          console.log("item", item)
           data.push(item)
         } else if(target == "videos") {
           let video = {
@@ -158,5 +163,13 @@ export const transformData = (category, target, productType = null) => {
 
   });
 
-  return data;
+
+  if(productTypes.length < 3) {
+    productTypes.shift();
+  }
+
+  return {
+    productTypes,
+    data
+  };
 };

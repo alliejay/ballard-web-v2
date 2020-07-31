@@ -1,5 +1,6 @@
 .productSearchFilter {
   display: block;
+  margin-bottom: 20px;
 }
 
 .productSearchButton {
@@ -9,6 +10,7 @@
 .productCard.ant-card {
   display: inline-block;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .coverImage {
@@ -19,4 +21,8 @@
   img {
     width: 100%;
   }
+}
+
+.buttons {
+  display: inline-block;
 }
