@@ -9,13 +9,14 @@ import './styles.scss';
 
 const ProductSearch = (props) => {
   const location = useLocation();
-  const searchTerm = location.state.searchTerm ? location.state.searchTerm : ALL;
+  const searchTerm = location.state && location.state.searchTerm ? location.state.searchTerm : ALL;
+  const selectText = location.state && location.state.brand ? location.state.brand : "Select Brand";
 
   const [search, setSearchTerm] = useState(searchTerm);
   const [data, setData] = useState([]);
   const [cards, setCards] = useState();
 
-  const [selectedBrand, setSelectText] = useState("Select Brand");
+  const [selectedBrand, setSelectText] = useState(selectText);
   const [productTypes, setProductTypes] = useState([eros, bikes]);
 
   const handleClick = (item) => {

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import { Row, Col } from 'antd';
 
 import yamaha from '../../img/yamaha.jpg';
@@ -14,7 +16,7 @@ const Brands = () => {
     <div>
       <Row >
         <Col className="logoCol" span={6}><img src={yamaha} className="brandLogo" id="yamaha" /></Col>
-        <Col className="logoCol" span={10}><img src={honda} className="brandLogo" id="honda" /></Col>
+        <Col className="logoCol" span={10}><Link to={{pathname: '/product-search', state: { brand: "Honda" }}}><img src={honda} className="brandLogo" id="honda" /></Link></Col>
         <Col className="logoCol" span={6}><h1 className="textLogo" id="actionwheels">Action Wheels</h1></Col> {/* TODO: get logo */}
       </Row>
 
