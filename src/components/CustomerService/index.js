@@ -9,14 +9,10 @@ import './styles.scss';
 const CustomerService = () => {
   return (
     <div>
-      <h1>Customer Service</h1>
+      <h2><a href="http://customerfirstservice.com/" target="new">Customer First Service:</a> (620) 432-3756</h2>
 
-      <h2>(620) 432-3756</h2>
-      <a href="http://customerfirstservice.com/" target="new">Customer First Service</a>
-
-      <br />
       <Link to="/assembly-videos">
-        <Button>Assembly Videos</Button>
+        <Button className="assembly-btn">Assembly Videos</Button>
       </Link>
 
     </div>

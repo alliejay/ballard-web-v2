@@ -43,7 +43,6 @@ const AssemblyVideos = () => {
 
   useEffect(() => {
     setCards(data.map((item, index) => {
-      console.log("item", item)
       if(item.assemblyVideo) {
         return <Card
         className="productCard"

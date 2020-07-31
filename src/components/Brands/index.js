@@ -12,20 +12,23 @@ import './styles.scss';
 const Brands = () => {
   return (
     <div>
-
-      <Row>
-        <Col span={6}><img src={yamaha} className="brandLogo" /></Col>
-        <Col span={6}><img src={honda} className="brandLogo" /></Col>
-        <Col span={6}><h1>Action Wheels</h1></Col> {/* TODO: get logo */}
-        <Col span={6}><img src={batman} className="brandLogo" /></Col>
+      <Row >
+        <Col className="logoCol" span={6}><img src={yamaha} className="brandLogo" id="yamaha" /></Col>
+        <Col className="logoCol" span={10}><img src={honda} className="brandLogo" id="honda" /></Col>
+        <Col className="logoCol" span={6}><h1 className="textLogo" id="actionwheels">Action Wheels</h1></Col> {/* TODO: get logo */}
       </Row>
 
       <Row>
-        <Col span={4}><h1>Sea Scooter</h1></Col> {/* TODO: get logo */}
-        <Col span={4}><h1>Thunder Tank</h1></Col> {/* TODO: get logo */}
-        <Col span={4}><img src={disney} className="brandLogo" /></Col>
-        <Col span={4}><img src={warnerbros} className="brandLogo" /></Col>
-        <Col span={4}><img src={columbia} className="brandLogo" /></Col>
+        <Col className="logoCol" span={6}><img src={batman} className="brandLogo" id="batman" /></Col>
+        <Col className="logoCol" span={10}><h1 className="textLogo">Sea Scooter</h1></Col> {/* TODO: get logo */}
+        <Col className="logoCol" span={6}><img src={warnerbros} className="brandLogo" /></Col>
+
+      </Row>
+
+      <Row >
+        <Col className="logoCol" span={6}><h1 className="textLogo">Thunder Tank</h1></Col> {/* TODO: get logo */}
+        <Col className="logoCol" span={10}><img src={disney} className="brandLogo" /></Col>
+        <Col className="logoCol" span={6}><img id="columbia" src={columbia} className="brandLogo" /></Col>
       </Row>
     </div>
   )
