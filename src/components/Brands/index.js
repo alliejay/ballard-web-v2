@@ -15,8 +15,8 @@ import './styles.scss';
 
 const Brands = () => {
   return (
-    <div>
-      <h2 className="title">OUR BRANDS</h2>
+    <div className="brands-container">
+      {/*<h2 className="title">OUR BRANDS</h2>*/}
       <Row >
         <Col className="logoCol" span={8}><img src={actionwheels} className="brandLogo" id="action_wheels" /></Col>
         <Col className="logoCol" span={8}><img src={honda} className="brandLogo" id="honda" /></Col>
@@ -27,7 +27,6 @@ const Brands = () => {
         <Col className="logoCol" span={8}><img src={yamaha} className="brandLogo" id="yamaha" /></Col>
         <Col className="logoCol" span={8}><img src={columbia} className="brandLogo" id="columbia" /></Col>
         <Col className="logoCol" span={8}><img src={warnerbros} className="brandLogo" id="warnerbros" /></Col>
-
       </Row>
 
       <Row >
@@ -35,7 +34,6 @@ const Brands = () => {
         <Col className="logoCol" span={8}><img src={seascooter} className="brandLogo" id="seascooter" /></Col>
         <Col className="logoCol" span={8}><img id="columbia" src={batman} className="brandLogo" /></Col>
       </Row>
-
     </div>
   )
 };

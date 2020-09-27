@@ -8,10 +8,6 @@ export const models = [
     urlParam: "12-volt-fj-cruiser-toyota"
   },
   {
-    label: "12 Volt Yamaha Raptor 660R",
-    urlParam: "12-volt-yamaha-raptor-660r" // Page not found -- expected?
-  },
-  {
     label: "12 Volt Yamaha Raptor 700R",
     urlParam: "12-volt-yamaha-raptor-700r"
   },
@@ -31,4 +27,11 @@ export const models = [
     label: "6 Volt Disney Scooter",
     urlParam: "6-volt-disney-scooter"
   }
+];
+
+export const manuals = [
+  {
+    label: "12 Volt Honda Talon UTV",
+    urlParam: "manuals/honda12v.pdf"
+  },
 ];

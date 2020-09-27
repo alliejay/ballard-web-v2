@@ -13,6 +13,19 @@ import Products from '../Products/index.js';
 import Brands from '../../components/Brands/index.js';
 import ProductSearch from '../ProductSearch/index.js';
 import AssemblyVideos from '../AssemblyVideos/index';
+import Parts from '../Parts/index';
+import Manuals from '../Manuals/index';
+
+import banner from '../../img/banner.jpg';
+import {
+  TagsOutlined,
+  FilePdfOutlined,
+  PhoneOutlined,
+  ToolOutlined
+} from '@ant-design/icons';
+
+import { Layout } from 'antd';
+const { Footer } = Layout;
 
 const Navigation = () => {
   return (
@@ -32,6 +45,31 @@ const Navigation = () => {
             </div>
           </div>
 
+      <div className="banner-container">
+        <img src={banner} className="banner" />
+        <div className="overlay">
+          <div className="icon-pair">
+            <TagsOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" />
+            <Link className="icon-text" to="/brands">BRANDS</Link>
+          </div>
+
+          <div className="icon-pair">
+            <FilePdfOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" />
+            <Link className="icon-text" to="/manuals">PDF MANUALS</Link>
+          </div>
+
+          <div className="icon-pair">
+            <ToolOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" />
+            <Link className="icon-text" to="/parts">FIND PARTS</Link>
+          </div>
+
+          <div className="icon-pair">
+            <PhoneOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" />
+            <Link className="icon-text" to="/brands">CONTACT</Link>
+          </div>
+        </div>
+      </div>
+
           <div className="page-wrapper">
             <Switch>
               <Route path="/customer-service">
@@ -47,7 +85,13 @@ const Navigation = () => {
                 <ProductSearch />
               </Route>
               <Route path="/assembly-videos">
-                <AssemblyVideos />
+              <AssemblyVideos />
+            </Route>
+              <Route path="/parts">
+                <Parts />
+              </Route>
+              <Route path="/manuals">
+                <Manuals />
               </Route>
               <Route path="/">
                 <About />
@@ -56,6 +100,7 @@ const Navigation = () => {
           </div>
         </div>
       </Router>
+      {/*<Footer>Ballard Pacific</Footer>*/}
     </div>
   )
 };
