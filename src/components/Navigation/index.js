@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import logo from '../../img/logo.png';
 import About from '../../components/About/index.js';
 import CustomerService from '../../components/CustomerService/index.js';
 import Products from '../Products/index.js';
@@ -18,15 +19,16 @@ const Navigation = () => {
     <div className="navigation">
       <Router>
         <div>
-          <div>
+          <div className="nav-container">
             <div className="nav-logo">
-              <Link to="/"><h2 className="logo">LOGO</h2></Link>
+              <Link to="/"><img src={logo} /></Link>
             </div>
             <div className="nav">
-              <ul className="nav-list">
-                <li><Link to="/customer-service">CUSTOMER SERVICE</Link></li>
-                <li><Link to="/products">PRODUCTS</Link></li>
-              </ul>
+              Customer Service: <a href="tel:1-866-424-0500">866-424-0500</a>
+              {/*<ul className="nav-list">*/}
+                {/*<li><Link to="/customer-service">CUSTOMER SERVICE</Link></li>*/}
+                {/*<li><Link to="/products">PRODUCTS</Link></li>*/}
+              {/*</ul>*/}
             </div>
           </div>
 

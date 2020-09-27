@@ -14,3 +14,45 @@
 .homescreen-btn {
   margin-top: 25px;
 }
+
+.banner-container {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, .85);
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 100px;
+  opacity: .65;
+}
+
+.icon-pair {
+  text-align: center;
+  display: inline-block;
+  width: 250px;
+  //height: 100px;
+  //position: relative;
+  //top: 14px;
+  line-height: 100px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  clear: right;
+}
+
+.icon-text {
+  margin-left: 20px;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+}
