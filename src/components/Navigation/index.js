@@ -15,6 +15,7 @@ import ProductSearch from '../ProductSearch/index.js';
 import AssemblyVideos from '../AssemblyVideos/index';
 import Parts from '../Parts/index';
 import Manuals from '../Manuals/index';
+import Contact from '../Contact/index';
 
 import banner from '../../img/banner.jpg';
 import {
@@ -49,24 +50,21 @@ const Navigation = () => {
         <img src={banner} className="banner" />
         <div className="overlay">
           <div className="icon-pair">
-            <TagsOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" />
-            <Link className="icon-text" to="/brands">BRANDS</Link>
+            <Link className="icon-text" to="/brands"><TagsOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" /> BRANDS</Link>
           </div>
 
           <div className="icon-pair">
-            <FilePdfOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" />
-            <Link className="icon-text" to="/manuals">PDF MANUALS</Link>
+            <Link className="icon-text" to="/manuals"><FilePdfOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" /> PDF MANUALS</Link>
           </div>
 
           <div className="icon-pair">
-            <ToolOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" />
-            <Link className="icon-text" to="/parts">FIND PARTS</Link>
+            <Link className="icon-text" to="/parts"><ToolOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" /> FIND PARTS</Link>
           </div>
 
-          <div className="icon-pair">
-            <PhoneOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" />
-            <Link className="icon-text" to="/brands">CONTACT</Link>
-          </div>
+          {/*<div className="icon-pair">*/}
+            {/*<PhoneOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" />*/}
+            {/*<Link className="icon-text" to="/contact">CONTACT</Link>*/}
+          {/*</div>*/}
         </div>
       </div>
 
@@ -92,6 +90,9 @@ const Navigation = () => {
               </Route>
               <Route path="/manuals">
                 <Manuals />
+              </Route>
+              <Route path="/contact">
+                <Contact />
               </Route>
               <Route path="/">
                 <About />
