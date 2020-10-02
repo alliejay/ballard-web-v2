@@ -1,19 +1,20 @@
 import React from 'react';
 import DropDown from '../../components/Dropdown/index.js';
 import { models } from '../../utilities/models.js';
-import { Button } from 'antd';
 import { Link } from "react-router-dom";
+import { SHOP_BASE_URL } from '../../utilities/constants';
 
 import './styles.scss';
 
 const CustomerService = () => {
   return (
-    <div>
-      <h2><a href="http://customerfirstservice.com/" target="new">Customer First Service:</a> (620) 432-3756</h2>
+    <div className="content-padding">
+      <h3>Looking for a specific part? We can help.</h3>
+      <DropDown options={models} label="Select Product" baseUrl={SHOP_BASE_URL}/>
 
-      <Link to="/assembly-videos">
-        <Button className="assembly-btn">Assembly Videos</Button>
-      </Link>
+      <br/><br/><br/>
+      <h2><a href="http://customerfirstservice.com/" target="new">Customer First Service</a></h2>
+      <h3>tel: <a href="tel:1-866-424-0500">866-424-0500</a></h3>
 
     </div>
   )

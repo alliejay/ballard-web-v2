@@ -35,7 +35,7 @@ const Navigation = () => {
         <div>
           <div className="nav-container">
             <div className="nav-logo">
-              <Link to="/"><img src={logo} /></Link>
+              <Link id="temp-logo" to="/">Ballard Pacific</Link>
             </div>
             <div className="nav">
               Customer Service: <a href="tel:1-866-424-0500">866-424-0500</a>
@@ -50,21 +50,16 @@ const Navigation = () => {
         <img src={banner} className="banner" />
         <div className="overlay">
           <div className="icon-pair">
+            <Link className="icon-text" to="/customer-service"> <ToolOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" /> CUSTOMER SERVICE</Link>
+          </div>
+
+          <div className="icon-pair">
+            <Link className="icon-text" to="/manuals"><FilePdfOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" /> SELF HELP GUIDES</Link>
+          </div>
+
+          <div className="icon-pair">
             <Link className="icon-text" to="/brands"><TagsOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" /> BRANDS</Link>
           </div>
-
-          <div className="icon-pair">
-            <Link className="icon-text" to="/manuals"><FilePdfOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" /> PDF MANUALS</Link>
-          </div>
-
-          <div className="icon-pair">
-            <Link className="icon-text" to="/parts"><ToolOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" /> FIND PARTS</Link>
-          </div>
-
-          {/*<div className="icon-pair">*/}
-            {/*<PhoneOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" />*/}
-            {/*<Link className="icon-text" to="/contact">CONTACT</Link>*/}
-          {/*</div>*/}
         </div>
       </div>
 

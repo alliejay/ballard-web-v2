@@ -1,6 +1,8 @@
 .dropdown-container {
   display: inline-block;
-  margin-right: 25px;
+  margin: 0 20px 0 0;
+  //border-bottom: 1px solid grey;
+  padding: 2px;
 }
 
 .label, .dropdown {
@@ -9,4 +11,11 @@
 
 .label {
   padding-right: 15px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.dropdown-text {
+  display: inline-block;
+  margin-right: 5px;
 }

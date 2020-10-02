@@ -29,9 +29,32 @@ export const models = [
   }
 ];
 
-export const manuals = [
+export const assemblyGuides = [
   {
     label: "12 Volt Honda Talon UTV",
-    urlParam: "manuals/honda12v.pdf"
+    urlParam: "assembly/honda12v.pdf"
   },
+  {
+    label: "12 Volt Yamaha Raptor ATV",
+    urlParam: "assembly/yamaha12v.pdf"
+  }
+];
+
+export const manuals = [
+  {
+    label: "6v Disney Princess Scooter",
+    urlParam: "user/disneyprincess6v.pdf"
+  },
+  {
+    label: "6v McQueen Scooter",
+    urlParam: "user/mcqueen6v.pdf"
+  },
+  {
+    label: "6v Sofia Car",
+    urlParam: "user/sofia6v.pdf"
+  },
+  {
+    label: "6v Yamaha ATV",
+    urlParam: "user/yamahaatv6v.pdf"
+  }
 ];

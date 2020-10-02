@@ -40,7 +40,7 @@ const DropDown = ({options, label, handleClick, selectText, baseUrl}) => {
 
  return (
    <div className="dropdown-container">
-     <p className="label">{label}: </p>
+     <p className="label">{label}</p>
      <Dropdown overlay={menu} trigger={['click']} className="dropdown">
       <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
         {selectText} <DownOutlined />
