@@ -22,7 +22,8 @@ import {
   TagsOutlined,
   FilePdfOutlined,
   PhoneOutlined,
-  ToolOutlined
+  ToolOutlined,
+  CustomerServiceOutlined
 } from '@ant-design/icons';
 
 import { Layout } from 'antd';
@@ -50,7 +51,7 @@ const Navigation = () => {
         <img src={banner} className="banner" />
         <div className="overlay">
           <div className="icon-pair">
-            <Link className="icon-text" to="/customer-service"> <ToolOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" /> CUSTOMER SERVICE</Link>
+            <Link className="icon-text" to="/customer-service"> <CustomerServiceOutlined style={{ fontSize: '60px', color: 'black' }} className="icon" /> CUSTOMER SERVICE</Link>
           </div>
 
           <div className="icon-pair">
