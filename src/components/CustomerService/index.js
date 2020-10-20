@@ -7,14 +7,21 @@ import { SHOP_BASE_URL } from '../../utilities/constants';
 import './styles.scss';
 
 const CustomerService = () => {
+  embedForm = () => {
+    EmbedManager.embed({
+      key: "https://fs4.formsite.com/res/showFormEmbed?EParam=PyBo85CFjhENtvLZ3yttpdt7h1SghSJ6&956043880",
+      width: "100%"
+    });
+  };
+
   return (
     <div className="content-padding">
-      <h3>Looking for a specific part? We can help.</h3>
-      <DropDown options={models} label="Select Product" baseUrl={SHOP_BASE_URL}/>
-
-      <br/><br/><br/>
       <h2><a href="http://customerfirstservice.com/" target="new">Customer First Service</a></h2>
       <h3>tel: <a href="tel:1-866-424-0500">866-424-0500</a></h3>
+
+
+      <a name="form956043880" id="formAnchor956043880"></a>
+
 
     </div>
   )
@@ -22,6 +29,8 @@ const CustomerService = () => {
 
 export default CustomerService;
 
+{/*<h3>Looking for a specific part? We can help.</h3>*/}
+{/*<DropDown options={models} label="Select Product" baseUrl={SHOP_BASE_URL}/>*/}
 
 {/*<h3>*/}
   {/*<DropDown options={models} label="Select product to view manual"/>

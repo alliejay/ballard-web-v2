@@ -1,0 +1,38 @@
+.manuals {
+  margin: auto;
+  width: 35%;
+  .customerServiceWhite {
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.guide-dropdowns {
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.guide-dropdown {
+  position: relative;
+  left: 29px;
+  display: inline-block;
+}
+
+.video-dropdown {
+  position: relative;
+  left: 30px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.user-dropdown {
+  position: relative;
+  left: 60px;
+  display: inline-block;
+  margin-top: 15px;
+}
+

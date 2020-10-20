@@ -6,7 +6,7 @@ import { MANUALS } from '../../utilities/constants.js';
 import {
   Link
 } from "react-router-dom";
-const DropDown = ({options, label, handleClick, selectText, baseUrl}) => {
+const DropDown = ({options, label, handleClick, selectText, baseUrl, className}) => {
 
   const menu = (
     <Menu onClick={handleClick}>
@@ -39,9 +39,9 @@ const DropDown = ({options, label, handleClick, selectText, baseUrl}) => {
   );
 
  return (
-   <div className="dropdown-container">
+   <div className={`dropdown-container ${className}`}>
      <p className="label">{label}</p>
-     <Dropdown overlay={menu} trigger={['click']} className="dropdown">
+     <Dropdown overlay={menu} placement="bottomRight" trigger={['click']} className="dropdown" overlayClassName="dropdown-test">
       <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
         {selectText} <DownOutlined />
       </a>

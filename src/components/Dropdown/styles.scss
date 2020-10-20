@@ -2,7 +2,10 @@
   display: inline-block;
   margin: 0 20px 0 0;
   //border-bottom: 1px solid grey;
-  padding: 2px;
+  padding: 3px 3px 3px 5px;
+  background-color: white;
+  width: 198px;
+  font-size: 16px;
 }
 
 .label, .dropdown {
@@ -10,12 +13,16 @@
 }
 
 .label {
-  padding-right: 15px;
+  padding-right: 76px;
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .dropdown-text {
   display: inline-block;
   margin-right: 5px;
+}
+
+.dropdown-test {
+  left: 766px;
 }

@@ -1,46 +1,59 @@
 .navigation {
-  height: 100px;
+  height: 120px;
   background-color: #f7f9fB;
+  color: #474747;
 }
 
 .nav-container {
-  height: 105px;
-  border-bottom: solid 10px #557A9C;
+  height: 120px;
   padding-bottom: 10px;
 }
 
 .nav-logo {
-  width: 30%;
-  position: relative;
-  left: 5%;
+  position: absolute;
   line-height: 100px;
-  h2 {
-    display: inline;
-  }
 }
 
 .nav {
-  width: 60%;
+  width: 75%;
   position: relative;
-  left: 65%;
+  left: 40%;
   text-align: right;
   font-size: 20px;
 }
 
 .logo {
   text-align: left;
+  width: 25%;
+  position: relative;
+  top: -60px;
+  left: -50px;
 }
 
 .nav-logo, .nav {
   display: inline;
 }
 
+.customerServiceNumber {
+  display: block;
+  width: 75%;
+  position: relative;
+  top: 25px;
+  right: 277px;
+}
+
 .nav-list {
-  display: inline-block;
+  display: block;
+  width: 75%;
+  position: relative;
+  top: 40px;
+  right: 240px;
   li {
     display: inline-block;
-    margin: auto 20px;
-    line-height: 100px;
+    margin: auto 35px;
+    a {
+      color: #474747;
+    }
   }
 }
 
@@ -48,11 +61,42 @@
   height: 100px;
 }
 
-#temp-logo {
-  color: black;
-  font-size: 24px;
+.welcomeText {
+  background-color: #DEF2F1;
+  height: 400px;
+  width: 100%;
+  p {
+    font-size: 25px;
+    font-weight: 300;
+    width: 55%;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    top: 70px;
+  }
 }
-//.page-wrapper {
-//  padding-top: 40px;
-//  padding-left: 50px;
-//}
+
+.panel {
+  h2 {
+    padding-top: 40px;
+  }
+  h2, h3 {
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.secondPanel {
+  background-color: #5FB5B1;
+  height: 500px;
+}
+
+.thirdPanel {
+  height: 800px;
+}
+
+.fourthPanel {
+  background-color: #DEF2F1;
+  height: 400px;
+}
