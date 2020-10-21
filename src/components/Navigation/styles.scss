@@ -10,47 +10,49 @@
 }
 
 .nav-logo {
-  position: absolute;
-  line-height: 100px;
-}
-
-.nav {
-  width: 75%;
   position: relative;
-  left: 40%;
-  text-align: right;
-  font-size: 20px;
+  bottom: 17px;
+  line-height: 100px;
+  width: 24%;
+  float: left;
+  display: inline;
 }
 
 .logo {
   text-align: left;
-  width: 25%;
-  position: relative;
-  top: -60px;
-  left: -50px;
+  width: 300px;
+  position: absolute;
+  top: -40px;
+  left: -43px;
 }
 
-.nav-logo, .nav {
-  display: inline;
+.nav {
+  width: 100%;
+  position: relative;
+  text-align: right;
+  font-size: 20px;
+  display: inline-block;
+  float: right;
 }
 
 .customerServiceNumber {
   display: block;
-  width: 75%;
+  width: 80%;
   position: relative;
   top: 25px;
-  right: 277px;
+  right: 2%;
+  float: right;
 }
 
 .nav-list {
   display: block;
-  width: 75%;
+  width: 80%;
+  float: right;
   position: relative;
   top: 40px;
-  right: 240px;
   li {
     display: inline-block;
-    margin: auto 35px;
+    margin: auto 2%;
     a {
       color: #474747;
     }
@@ -98,5 +100,5 @@
 
 .fourthPanel {
   background-color: #DEF2F1;
-  height: 400px;
+  height: 475px;
 }

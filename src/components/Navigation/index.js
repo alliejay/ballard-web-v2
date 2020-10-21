@@ -46,10 +46,10 @@ const Navigation = () => {
               </div>
 
               <ul className="nav-list">
-                <li><Link to="/customer-service">CUSTOMER SERVICE</Link></li>
+                <li><a href="#customerService">CUSTOMER SERVICE</a></li>
                 <li><Link to="/products">SEARCH PRODUCTS</Link></li>
-                <li><Link to="/products">SELF HELP GUIDES</Link></li>
-                <li><Link to="/products">BRANDS</Link></li>
+                <li><a href="#selfHelpGuides">SELF HELP GUIDES</a></li>
+                <li><a href="#brands">BRANDS</a></li>
               </ul>
             </div>
           </div>
@@ -66,19 +66,19 @@ const Navigation = () => {
           </p>
         </div>
 
-        <div className="secondPanel panel">
+        <div className="secondPanel panel" id="selfHelpGuides">
           <h2>Self Help Guides</h2>
           <h3>Select a product from one of the dropdown menus to view the guide.</h3>
           <Manuals />
         </div>
 
-        <div className="thirdPanel panel">
+        <div className="thirdPanel panel" id="brands">
           <h2>Ballard Pacific & Action Wheels are proud to partner with the following brands:</h2>
           <Brands />
         </div>
 
-        <div className="fourthPanel panel">
-          <h2></h2>
+        <div className="fourthPanel panel" id="customerService">
+          <h2>Contact Customer Service</h2>
           <CustomerService />
         </div>
 

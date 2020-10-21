@@ -5,4 +5,21 @@
 
 .contact-form {
   margin: 0 auto;
+  position: relative;
+  left: 18%;
+}
+
+.customerService {
+  a {
+    color: black;
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+
+  h4 {
+    font-weight: 300;
+    text-align: center;
+  }
 }
