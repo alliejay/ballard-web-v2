@@ -63,7 +63,7 @@ const ProductSearch = (props) => {
   }
 
   return (
-    <div className="productSearchContainer">
+    <div className="content-padding productSearchContainer">
       <div className="productSearchFilter">
         <DropDown
           label="Search Brands"

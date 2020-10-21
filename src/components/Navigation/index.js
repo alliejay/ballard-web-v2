@@ -47,7 +47,7 @@ const Navigation = () => {
 
               <ul className="nav-list">
                 <li><a href="#customerService">CUSTOMER SERVICE</a></li>
-                <li><Link to="/products">SEARCH PRODUCTS</Link></li>
+                <li><a href="#productSearch">SEARCH PRODUCTS</a></li>
                 <li><a href="#selfHelpGuides">SELF HELP GUIDES</a></li>
                 <li><a href="#brands">BRANDS</a></li>
               </ul>
@@ -80,6 +80,11 @@ const Navigation = () => {
         <div className="fourthPanel panel" id="customerService">
           <h2>Contact Customer Service</h2>
           <CustomerService />
+        </div>
+
+        <div className="fifth panel" id="productSearch">
+          <h2>Search Products</h2>
+          <ProductSearch />
         </div>
 
         {/*Routes*/}
