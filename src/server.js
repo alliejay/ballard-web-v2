@@ -32,7 +32,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: 'alliejarsenault@gmail.com',  // TODO Change to info@ballardpacific.com
+    to: 'info@ballardpacific.com', // where form is sent
     subject: 'New Message from Contact Form',
     text: content
   }
