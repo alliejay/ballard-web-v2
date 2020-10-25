@@ -9,11 +9,12 @@ import './styles.scss';
 const CustomerService = () => {
   return (
     <div className="customerService">
-      <h3><a href="http://customerfirstservice.com/" target="new">Customer First Service</a>: <a href="tel:1-866-424-0500">866-424-0500</a></h3>
+      <h3><a href="tel:1-866-424-0500">866-424-0500</a></h3>
+      <h3><a href="mailto:info@ballardpacific.com">info@ballardpacific.com</a></h3>
+      <h4>Hours: Monday - Friday 8AM-5PM CST</h4>
 
-      <br/><br/>
-      <h4>Contact us. We'd love to hear from you.</h4>
       <br/>
+      <h4>Contact us. We'd love to hear from you.</h4>
       <div className="contact-form">
         <Demo />
       </div>

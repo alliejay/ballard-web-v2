@@ -1,20 +1,25 @@
 .productSearchFilter {
   display: block;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 97%;
 }
 
 .productSearchButton {
   margin-right: 15px;
 }
 
+.productSearchContainer {
+  margin-right: 20px;
+}
+
 .productCard.ant-card {
   display: inline-block;
-  margin-right: 20px;
+  //margin-right: 20px;
   margin-bottom: 20px;
 }
 
 .coverImage {
-  height: 400px;
+  height: 350px;
   object-fit: cover;
   overflow: hidden;
   object-position: 50% 50%;
@@ -34,4 +39,11 @@
 .assemblyLink {
   position: absolute;
   right: 10px;
+}
+
+.productCards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

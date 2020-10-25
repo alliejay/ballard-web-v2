@@ -20,10 +20,10 @@
 
 .logo {
   text-align: left;
-  width: 300px;
+  width: 335px;
   position: absolute;
-  top: -40px;
-  left: -43px;
+  top: -50px;
+  left: -55px;
 }
 
 .nav {
@@ -53,9 +53,37 @@
   li {
     display: inline-block;
     margin: auto 2%;
+    color: #474747;
     a {
-      color: #474747;
+      position: relative;
+      color: inherit;
+      text-decoration: none;
+      line-height: 24px;
+      padding-bottom: 4px;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        transition: transform .5s ease;
+      }
     }
+  }
+}
+
+$hover: lighten(#474747, 20%);
+
+//https://codepen.io/P233/pen/EaGAl
+.effect-1 {
+  padding-top: 10px;
+  &:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: $hover;
+    transform:  scaleX(0);
+  }
+  &:hover:before {
+    transform:  scaleX(1);
   }
 }
 
@@ -65,23 +93,24 @@
 
 .welcomeText {
   background-color: #DEF2F1;
-  height: 400px;
+  height: auto;
   width: 100%;
   p {
     font-size: 25px;
     font-weight: 300;
     width: 55%;
     margin: auto;
-    height: 200px;
+    height: auto;
     text-align: center;
-    position: relative;
-    top: 70px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    line-height: 1.85;
   }
 }
 
 .panel {
   h2 {
-    padding-top: 40px;
+    padding-top: 2%;
   }
   h2, h3 {
     font-weight: 300;
@@ -91,14 +120,22 @@
 
 .secondPanel {
   background-color: #5FB5B1;
-  height: 500px;
+  height: 460px;
+  padding: 1% 0;
+  h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+  }
 }
 
 .thirdPanel {
-  height: 800px;
+  height: auto;
+  padding: 1% 0;
 }
 
 .fourthPanel {
   background-color: #DEF2F1;
-  height: 475px;
+  height: auto;
+  padding: 1% 0;
 }

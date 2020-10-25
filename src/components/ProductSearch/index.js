@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import DropDown from '../../components/Dropdown/index.js';
-import { Button, Card, Col, Row } from 'antd';
+import { Button, Card, Col, Row, Space } from 'antd';
 import { EROS, BIKES, ALL } from '../../utilities/constants';
 import { PARENT_COMPANIES, BRANDS, transformData, eros, bikes } from '../../utilities/productMapping';
 import { forEach as _forEach, sortBy as _sortBy } from 'lodash';
@@ -47,7 +47,7 @@ const ProductSearch = (props) => {
         className="productCard"
         title={item.name}
         size="small"
-        style={{ width: 450 }}
+        style={{ width: '30%' }}
         key={index}>
         <div className="coverImage"><img src={item.image} /></div>
         <div className="links">
@@ -66,33 +66,36 @@ const ProductSearch = (props) => {
     <div className="content-padding productSearchContainer">
       <div className="productSearchFilter">
         <DropDown
-          label="Search Brands"
+          label="Filter Results: "
+          className="brandSearch"
           options={createBrandList()}
           selectText={selectedBrand}
           handleClick={handleClick}/>
 
-        {
-          productTypes.length == 3 &&
-          <Button type={search == ALL && 'primary'}
-                  onClick={() => setSearchTerm(ALL)}
-                  className="productSearchButton">ALL</Button>
-        }
-        {
-          productTypes.includes(eros) &&
-          <Button type={search == eros && 'primary'}
-                  onClick={() => setSearchTerm(eros)}
-                  className="productSearchButton">ELECTRIC RIDE ONS</Button>
-        }
-        {
-          productTypes.includes(bikes) &&
-          <Button type={search == bikes && 'primary'}
-                  onClick={() => setSearchTerm(bikes)}
-                  className="productSearchButton">BICYCLES</Button>
-        }
+        {/*{*/}
+          {/*productTypes.length == 3 &&*/}
+          {/*<Button type={search == ALL && 'primary'}*/}
+                  {/*onClick={() => setSearchTerm(ALL)}*/}
+                  {/*className="productSearchButton">ALL</Button>*/}
+        {/*}*/}
+        {/*{*/}
+          {/*productTypes.includes(eros) &&*/}
+          {/*<Button type={search == eros && 'primary'}*/}
+                  {/*onClick={() => setSearchTerm(eros)}*/}
+                  {/*className="productSearchButton">ELECTRIC RIDE ONS</Button>*/}
+        {/*}*/}
+        {/*{*/}
+          {/*productTypes.includes(bikes) &&*/}
+          {/*<Button type={search == bikes && 'primary'}*/}
+                  {/*onClick={() => setSearchTerm(bikes)}*/}
+                  {/*className="productSearchButton">BICYCLES</Button>*/}
+        {/*}*/}
 
       </div>
 
+    <div className="productCards">
       {cards}
+    </div>
 
     </div>
   )

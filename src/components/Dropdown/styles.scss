@@ -13,7 +13,7 @@
 }
 
 .label {
-  padding-right: 76px;
+  padding-right: 4%;
   margin: 0;
   font-size: 14px;
 }
@@ -23,6 +23,9 @@
   margin-right: 5px;
 }
 
-.dropdown-test {
-  left: 766px;
+.brandSearch {
+  width: 250px;
+  .label {
+    font-size: 16px;
+  }
 }

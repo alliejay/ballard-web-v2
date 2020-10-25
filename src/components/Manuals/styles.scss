@@ -1,6 +1,8 @@
 .manuals {
   margin: auto;
   width: 35%;
+  position: relative;
+  display: block;
   .customerServiceWhite {
     color: white;
     &:hover {
@@ -14,12 +16,24 @@
   width: 100%;
   margin: auto;
   margin-top: 30px;
+  position: absolute;
+  left: 10%;
+  display: inline-block;
+}
+
+.guide-extraHelp {
+  position: relative;
+  bottom: -210px;
+  margin: 0 auto;
 }
 
 .guide-dropdown {
   position: relative;
   left: 29px;
   display: inline-block;
+  .label {
+    padding-right: 80px;
+  }
 }
 
 .video-dropdown {
@@ -27,6 +41,9 @@
   left: 30px;
   display: inline-block;
   margin-top: 15px;
+  .label {
+    padding-right: 80px;
+  }
 }
 
 .user-dropdown {
@@ -34,5 +51,8 @@
   left: 60px;
   display: inline-block;
   margin-top: 15px;
+  .label {
+    padding-right: 80px;
+  }
 }
 

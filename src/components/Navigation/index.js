@@ -46,10 +46,10 @@ const Navigation = () => {
               </div>
 
               <ul className="nav-list">
-                <li><a href="#customerService">CUSTOMER SERVICE</a></li>
-                <li><a href="#productSearch">SEARCH PRODUCTS</a></li>
-                <li><a href="#selfHelpGuides">SELF HELP GUIDES</a></li>
-                <li><a href="#brands">BRANDS</a></li>
+                <li><a href="#customerService" className="effect-1">CUSTOMER SERVICE</a></li>
+                <li><a href="#productSearch" className="effect-1">SEARCH PRODUCTS</a></li>
+                <li><a href="#selfHelpGuides" className="effect-1">SELF HELP GUIDES</a></li>
+                <li><a href="#brands" className="effect-1">BRANDS</a></li>
               </ul>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Navigation = () => {
       <div className="wrapper">
         <div className="welcomeText">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula, purus in cursus vulputate, metus orci tincidunt dui, vel feugiat nulla sapien eget mi. Morbi sagittis hendrerit dui sit amet rutrum. Sed et faucibus ligula. Sed commodo lobortis sollicitudin. Quisque vel aliquam nisl. Phasellus et ex lacus. Etiam convallis massa libero, lacinia porta nisi convallis eget. Duis tincidunt nulla vel ex sollicitudin congue.
+            Ballard Pacific designs, manufactures and sells high quality electric ride-on toys and bicycles.  We partner with the companies like Disney, Honda, Yamaha & Mercedes Benz to create kid-size versions of the cars, trucks and recreational vehicles that everone loves.  Ballard uses ONLY the best components, motors and materials to make the safest riding toys sold in the USA.  Due to our company’s structure, Ballard controls the process from the design stage through manufacturing and final shipment, which ensures high quality at affordable prices.
           </p>
         </div>
 
@@ -70,6 +70,7 @@ const Navigation = () => {
           <h2>Self Help Guides</h2>
           <h3>Select a product from one of the dropdown menus to view the guide.</h3>
           <Manuals />
+
         </div>
 
         <div className="thirdPanel panel" id="brands">

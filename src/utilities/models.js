@@ -1,3 +1,4 @@
+// this  was for shopballardpacific.com to get parts
 export const models = [
   {
     label: "12 Inch Yamaha Motobike",
@@ -44,10 +45,6 @@ export const manuals = [
   {
     label: "6v Disney Princess Scooter",
     urlParam: "/manuals/user/disneyprincess6v.pdf"
-  },
-  {
-    label: "6v McQueen Scooter",
-    urlParam: "/manuals/user/mcqueen6v.pdf"
   },
   {
     label: "6v Sofia Car",
