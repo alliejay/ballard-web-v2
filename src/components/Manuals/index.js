@@ -23,8 +23,8 @@ const Manuals = () => {
       </div>
 
       <div className="guide-extraHelp">
-      <h3>Still can't find what you need? Customer Service can help.</h3>
-      <h3><a href="http://www.customerfirstservice.com/" target="new" className="customerServiceWhite">Customer First Service:</a>  <a href="tel:1-866-424-0500" className="customerServiceWhite">866-424-0500</a></h3>
+        <h3>Still can't find what you need? <a href="#customerService">Customer Service</a> can help.</h3>
+      <h3><a href="tel:1-866-424-0500" className="customerServiceWhite">866-424-0500</a></h3>
       <br/><br/>
       </div>
     </div>

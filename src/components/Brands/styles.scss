@@ -39,3 +39,20 @@
   padding-top: 20px;
   font-size: 35px;
 }
+
+.logoCol {
+  width: 32%;
+}
+
+@media screen and (max-width: 843px) {
+  .logoCol {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logoCol {
+    width: 98%;
+  }
+}
+

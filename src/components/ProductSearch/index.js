@@ -48,7 +48,6 @@ const ProductSearch = (props) => {
         className="productCard"
         title={item.name}
         size="small"
-        style={{ width: '30%' }}
         key={index}>
         <div className="coverImage"><img src={item.image} /></div>
         <div className="links">

@@ -1,6 +1,6 @@
 .manuals {
   margin: auto;
-  width: 35%;
+  width: 40%;
   position: relative;
   display: block;
   .customerServiceWhite {
@@ -11,6 +11,60 @@
     }
   }
 }
+
+@media screen and (max-width: 1120px) {
+  .manuals {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .manuals {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .manuals {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 814px) {
+  .manuals {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .manuals {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .manuals {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .secondPanel h2 {
+    font-size: 20px;
+  }
+  .secondPanel h3 {
+    font-size: 18px;
+  }
+  .manuals {
+    width: 90%;
+  }
+  .guide-dropdowns {
+    h3 {
+      font-size: 16px;
+    }
+  }
+}
+
 
 .guide-dropdowns {
   width: 100%;
@@ -25,6 +79,16 @@
   position: relative;
   bottom: -190px;
   margin: 0 auto;
+  h3 {
+    font-weight: 300;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
 }
 
 .guide-dropdown {
@@ -48,7 +112,7 @@
 
 .user-dropdown {
   position: relative;
-  left: 60px;
+  left: 65px;
   display: inline-block;
   margin-top: 15px;
   .label {
@@ -56,3 +120,8 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  .user-dropdown {
+    left: 60px;
+  }
+}

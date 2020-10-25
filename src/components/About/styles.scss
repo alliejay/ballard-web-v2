@@ -15,26 +15,7 @@
   margin-top: 25px;
 }
 
-.banner-container {
-  width: 100%;
-}
 
-.banner-img {
-  display: inline-block;
-  width: 50%;
-  height: 320px;
-  border: solid 5px black;
-  object-fit: cover;
-  object-position: 50% 50%;
-}
-
-.bannerLeft {
-  border-right: solid 3px black;
-}
-
-.bannerRight {
-  border-left: solid 3px black;
-}
 
 .overlay {
   background: rgba(255, 255, 255, .85);

@@ -6,32 +6,41 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import logo from '../../img/logo.png';
-import About from '../../components/About/index.js';
+
+import { Dropdown, Menu } from 'antd';
 import CustomerService from '../../components/CustomerService/index.js';
-import Products from '../Products/index.js';
 import Brands from '../../components/Brands/index.js';
 import ProductSearch from '../ProductSearch/index.js';
-import AssemblyVideos from '../AssemblyVideos/index';
-import Parts from '../Parts/index';
 import Manuals from '../Manuals/index';
 import Contact from '../Contact/index';
 
 import disneyBanner from '../../img/disney_banner.jpg';
 import talonBanner from '../../img/talon_banner.jpg';
-
+import logo from '../../img/logo.png';
 import {
-  TagsOutlined,
-  FilePdfOutlined,
-  PhoneOutlined,
-  ToolOutlined,
-  CustomerServiceOutlined
+  MenuOutlined
 } from '@ant-design/icons';
 
-import { Layout } from 'antd';
-const { Footer } = Layout;
-
 const Navigation = () => {
+
+  const smallMenu = (
+    <Menu>
+      <Menu.Item key="customerService">
+        <a href="#customerService">CUSTOMER SERVICE</a>
+      </Menu.Item>
+      <Menu.Item key="productSearch">
+        <a href="#productSearch">SEARCH PRODUCTS</a>
+      </Menu.Item>
+      <Menu.Item key="productSearch">
+        <a href="#selfHelpGuides">SELF HELP GUIDES</a>
+      </Menu.Item>
+      <Menu.Item key="productSearch">
+        <a href="#brands">BRANDS</a>
+      </Menu.Item>
+    </Menu>
+  );
+
+
   return (
     <div className="navigation">
       <Router>
@@ -52,6 +61,15 @@ const Navigation = () => {
                 <li><a href="#brands" className="effect-1">BRANDS</a></li>
               </ul>
             </div>
+
+            <div className="smallNav">
+              <Dropdown overlay={smallMenu}>
+                <a className="ant-dropdown-link">
+                  <MenuOutlined className="hamburgerMenu" />
+                </a>
+              </Dropdown>
+            </div>
+
           </div>
 
       <div className="banner-container">
@@ -68,7 +86,7 @@ const Navigation = () => {
 
         <div className="secondPanel panel" id="selfHelpGuides">
           <h2>Self Help Guides</h2>
-          <h3>Select a product from one of the dropdown menus to view the guide.</h3>
+          <h3 id="self-help-text">Select a product from one of the dropdown menus to view the guide.</h3>
           <Manuals />
 
         </div>
@@ -87,37 +105,6 @@ const Navigation = () => {
           <h2>Search Products</h2>
           <ProductSearch />
         </div>
-
-        {/*Routes*/}
-        <Switch>
-          <Route path="/customer-service">
-            <CustomerService />
-          </Route>
-          <Route path="/products">
-            <Products />
-          </Route>
-          <Route path="/brands">
-            <Brands />
-          </Route>
-          <Route path="/product-search">
-            <ProductSearch />
-          </Route>
-          <Route path="/assembly-videos">
-          <AssemblyVideos />
-        </Route>
-          <Route path="/parts">
-            <Parts />
-          </Route>
-          <Route path="/manuals">
-            <Manuals />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <About />
-          </Route>
-        </Switch>
       </div>
     </div>
   </Router>

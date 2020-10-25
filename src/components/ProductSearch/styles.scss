@@ -16,6 +16,8 @@
   display: inline-block;
   //margin-right: 20px;
   margin-bottom: 20px;
+  width: 30%;
+  min-width: 288px;
 }
 
 .coverImage {
@@ -25,6 +27,70 @@
   object-position: 50% 50%;
   img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .coverImage {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .coverImage {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .coverImage {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 923px) {
+  .coverImage {
+    height: 380px;
+  }
+  .productCard.ant-card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .coverImage {
+    height: 330px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .coverImage {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .coverImage {
+    height: 400px;
+    img {
+      width: 85%;
+    }
+  }
+  .productCard.ant-card {
+    width: 98%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .coverImage {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .coverImage {
+    height: 250px;
   }
 }
 
