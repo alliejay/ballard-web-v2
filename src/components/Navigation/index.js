@@ -80,7 +80,7 @@ const Navigation = () => {
       <div className="wrapper">
         <div className="welcomeText">
           <p>
-            Ballard Pacific designs, manufactures and sells high quality electric ride-on toys and bicycles.  We partner with the companies like Disney, Honda, Yamaha & Mercedes Benz to create kid-size versions of the cars, trucks and recreational vehicles that everone loves.  Ballard uses ONLY the best components, motors and materials to make the safest riding toys sold in the USA.  Due to our company’s structure, Ballard controls the process from the design stage through manufacturing and final shipment, which ensures high quality at affordable prices.
+            Ballard Pacific designs, manufactures and sells high quality electric ride-on toys and bicycles.  We partner with the companies like Disney, Honda, Yamaha & Mercedes Benz to create kid-size versions of the cars, trucks and recreational vehicles that everyone loves.  Ballard uses ONLY the best components, motors and materials to make the safest riding toys sold in the USA.  Due to our company’s structure, Ballard controls the process from the design stage through manufacturing and final shipment, which ensures high quality at affordable prices.
           </p>
         </div>
 
