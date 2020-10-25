@@ -1,9 +1,6 @@
 import React from 'react';
-import DropDown from '../../components/Dropdown/index.js';
-import { models } from '../../utilities/models.js';
 import { Link } from "react-router-dom";
-import { SHOP_BASE_URL } from '../../utilities/constants';
-import Demo from '../Form/index.js';
+import ContactForm from '../Form/index.js';
 import './styles.scss';
 
 const CustomerService = () => {
@@ -16,7 +13,7 @@ const CustomerService = () => {
       <br/>
       <h4>Contact us. We'd love to hear from you.</h4>
       <div className="contact-form">
-        <Demo />
+        <ContactForm />
       </div>
 
     </div>

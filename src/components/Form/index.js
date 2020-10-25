@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 
 const layout = {
@@ -9,9 +9,28 @@ const tailLayout = {
   wrapperCol: { offset: 4, span: 8 },
 };
 
-const Demo = () => {
+const ContactForm = () => {
+  const [ form ] = Form.useForm();
+
   const onFinish = values => {
-    console.log('Success:', values);
+    const body = JSON.stringify(values);
+    fetch('http://localhost:5000/send', {
+      method: "POST",
+      body,
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+    }).then(
+      (response) => (response.json())
+    ).then((response)=> {
+      if (response.status === 'success') {
+        alert("Message Sent.");
+        form.resetFields()
+      } else if(response.status === 'fail') {
+        alert("Message failed to send.")
+      }
+    })
   };
 
   const onFinishFailed = errorInfo => {
@@ -20,28 +39,35 @@ const Demo = () => {
 
   return (
     <Form
+      form={form}
+      id="contact-form"
+      method="POST"
       {...layout}
       name="basic"
-      initialValues={{ remember: true }}
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
     >
       <Form.Item
         label="First & Last Name"
-        name="username"
-        rules={[{ required: true, message: '' }]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        label="Email"
-        name="username"
-        rules={[{ required: true, message: '' }]}
+        name="name"
+        rules={[{ required: true, message: 'Name is required' }]}
       >
         <Input />
       </Form.Item>
 
-      <Form.Item name={['user', 'introduction']} label="Message">
+      <Form.Item
+        label="Email"
+        name="email"
+        rules={[{ required: true, message: 'Email is required' }]}
+      >
+        <Input />
+      </Form.Item>
+
+      <Form.Item
+        label="Message"
+        name="message"
+        rules={[{ required: true, message: 'A message is required' }]}
+      >
         <Input.TextArea />
       </Form.Item>
 
@@ -54,4 +80,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default ContactForm;
