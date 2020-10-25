@@ -27,28 +27,35 @@ const walmartLink = "walmartLink";
 const assemblyVideo = "assemblyVideo";
 export const eros = "electricRideOns";
 export const bikes = "bikes";
-const videoEmbed = "videoEmbed"
+const videoEmbed = "videoEmbed";
+const assemblyGuide = "assemblyGuide";
+const itemPosition = "itemPosition";
 
 const HONDA_EROS = [
   {
     [productName]: "12 VOLT HONDA TALON UTV",
     [productImage]: honda12vt,
     [walmartLink]: "https://www.walmart.com/ip/12-VOLT-HONDA-TALON-UTV-Honda-Official-Licensed-Product/577126686?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSdxJo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSdxJo0F:0Y0&sharedid=test",
+    [assemblyGuide]: 'manuals/assembly/honda12v.pdf',
+    [itemPosition]: 0
   },
   {
     [productName]: "6 Volt Honda Metropolitan Pink Battery Powered Ride-on",
     [productImage]: hondaScooter,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Honda-Metropolitan-Pink-Battery-Powered-Ride-on-Perfect-for-your-darling-little-girl/883630988?athcpid=883630988&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=7928bce8-007-175425412cc12d&athancid=null&athena=true",
+    [itemPosition]: -2
   },
   {
     [productName]: "6 Volt Black Honda TRX Battery Powered Ride-On ATV",
     [productImage]: hondaBlack6,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Black-Honda-TRX-Battery-Powered-Ride-On-ATV/495925421",
+    [itemPosition]: 0
   },
   {
     [productName]: "12 Volt Honda Black TRX Battery Powered Ride-On",
     [productImage]: hondaBlack12,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Honda-Black-TRX-Battery-Powered-Ride-On/399851452",
+    [itemPosition]: 0
   }
 ];
 
@@ -61,21 +68,26 @@ const YAMAHA_EROS = [
     [productName]: "12 Volt Yamaha Raptor Battery Powered Ride-on Black/Green",
     [productImage]: yamaha12vt,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-Raptor-Battery-Powered-Ride-on-Black-Green-New-Custom-Graphic-Design/861364225",
+    [assemblyGuide]: 'manuals/assembly/yamaha12v.pdf',
+    [itemPosition]: 5
   },
   {
     [productName]: "12 Volt Yamaha Grizzly Blue",
     [productImage]: hondaGrizzly,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-Grizzly-Blue/673924141?athcpid=673924141&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=f2d02ede-007-1754252a8b7264&athancid=null&athena=true",
+    [itemPosition]: 0
   },
   {
     [productName]: "12 Volt Yamaha YXZ Battery Powered Ride-On",
     [productImage]: yamahaXYZ,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-YXZ-Battery-Powered-Ride-On-Aggressive-Design-for-serious-Off-Road-Fun/55627504",
+    [itemPosition]: -1
   },
   {
     [productName]: "6 Volt Yamaha Viking Battery Powered Ride-On",
     [productImage]: yamahaViking,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Yamaha-Viking-Battery-Powered-Ride-On-Hours-of-fun-with-this-kid-size-UTV/52674911",
+    [itemPosition]: 0
   }
 ];
 
@@ -101,36 +113,43 @@ const DISNEY_EROS = [
     [productName]: "Disney Princess Mercedes 6-Volt Battery Powered Ride-On",
     [productImage]: disneyPrincess,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Princess-Mercedes-6-Volt-Battery-Powered-Ride-On-Perfect-for-your-little-Princess/842112795",
+    [itemPosition]: 3
   },
   {
     [productName]: "Disney Frozen Convertible Car 6-Volt Battery-Powered Ride-On",
     [productImage]: disneyFrozen,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Convertible-Car-6-Volt-Battery-Powered-Ride-On/37312935?athcpid=37312935&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=13236ddb-007-1754250813b751&athancid=null&athena=true",
+    [itemPosition]: 2
   },
   {
     [productName]: "Disney Sofia the First Convertible Car 6-Volt Battery-Powered Ride-On",
     [productImage]: disneySofia,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Sofia-the-First-Convertible-Car-6-Volt-Battery-Powered-Ride-On/25414430?athcpid=25414430&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=86379c4a-007-17542517cb31bc&athancid=null&athena=true",
+    [itemPosition]: 1
   },
   {
     [productName]: "12 Volt Minnie Mouse Mercedes GLS-320 Battery Powered Ride-On",
     [productImage]: minnieMouse,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Minnie-Mouse-Mercedes-GLS-320-Battery-Powered-Ride-On/139212311?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSYXJo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSYXJo0F:0Y0&sharedid=test",
+    [itemPosition]: 0
   },
   {
     [productName]: "Disney Frozen Mercedes 6-Volt Battery Powered Ride-On",
     [productImage]: disneyFrozen6,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Mercedes-6-Volt-Battery-Powered-Ride-On-Perfect-For-Your-Little-Elsa-or-Anna/55627507?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSd3lo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSd3lo0F:0Y0&sharedid=test",
+    [itemPosition]: 0
   },
   {
     [productName]: "6 Volt Disney Frozen 3-Wheel Scooter Battery Powered Ride-On",
     [productImage]: disneyFrozenScooter,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Disney-Frozen-3-Wheel-Scooter-Battery-Powered-Ride-On/52674914?athcpid=52674914&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=27d5dfe0-007-1754253cdd895f&athancid=null&athena=true",
+    [itemPosition]: 0
   },
   {
     [productName]: "Disney Frozen Sleigh 12-Volt Battery Powered Ride-On",
     [productImage]: disneyFrozenSleigh,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Sleigh-12-Volt-Battery-Powered-Ride-On-for-your-little-Elsa-and-Anna-Hours-of-Fun/440160665?athcpid=440160665&athpgid=athenaItemPage&athcgid=null&athznid=PWVAV&athieid=v0&athstid=CS020&athguid=e455f5e2-007-1754254c218768&athancid=null&athena=true",
+    [itemPosition]: -3
   }
 ];
 
@@ -143,6 +162,7 @@ const THUNDER_TANK_EROS = [
     [productName]: "24 Volt Thunder Tank Ride-On With Working Cannon and Rotating Turret",
     [productImage]: thunderTank,
     [walmartLink]: "https://www.walmart.com/ip/NEW-WALMART-EXCLUSIVE-24-Volt-Thunder-Tank-Ride-On-With-Working-Cannon-and-Rotating-Turret/204394575?athcpid=204394575&athpgid=athenaItemPage&athcgid=null&athznid=PWVAV&athieid=v0&athstid=CS020&athguid=e917c4fe-007-175425342f7517&athancid=null&athena=true",
+    [itemPosition]: 4
   },
 ];
 
@@ -155,11 +175,13 @@ const BATMAN_EROS = [
     [productName]: "6 Volt DC Comics Batman Batmobile Battery Powered Ride-on",
     [productImage]: batMobile,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-DC-Comics-Batman-Batmobile-Battery-Powered-Ride-on-Features-Light-up-Cannons-and-Sounds/513873743",
+    [itemPosition]: 0
   },
   {
     [productName]: "Batman Batmobile 6-Volt Battery-Powered Ride-On",
     [productImage]: batMobile6,
     [walmartLink]: "https://www.walmart.com/ip/Batman-Batmobile-6-Volt-Battery-Powered-Ride-On/53341544?athcpid=53341544&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=a155d614-008-17542590d9f64d&athancid=null&athena=true",
+    [itemPosition]: 0
   },
 ];
 
@@ -172,6 +194,7 @@ const SEA_SCOOTER_EROS = [
     [productName]: "12 Volt SEASCOOTER - Battery Powered Ride-On Water Toy",
     [productImage]: seaScooter,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-SEASCOOTER-Exciting-New-Wal-Mart-Exclusive-Battery-Powered-Ride-On-Water-Toy/945884402",
+    [itemPosition]: 6
   },
 ];
 
@@ -276,7 +299,9 @@ export const transformData = (category, target, productType = null) => {
             name: product[productName],
             image: product[productImage],
             walmartLink: product[walmartLink],
-            assemblyVideo: product[assemblyVideo]
+            assemblyVideo: product[assemblyVideo],
+            assemblyGuide: product[assemblyGuide],
+            itemPosition: product[itemPosition]
           };
           data.push(item)
         } else if(target == "videos") {
@@ -295,7 +320,9 @@ export const transformData = (category, target, productType = null) => {
             name: product[productName],
             image: product[productImage],
             walmartLink: product[walmartLink],
-            assemblyVideo: product[assemblyVideo]
+            assemblyVideo: product[assemblyVideo],
+            assemblyGuide: product[assemblyGuide],
+            itemPosition: product[itemPosition]
           };
           data.push(item)
         } else if(target == "videos") {

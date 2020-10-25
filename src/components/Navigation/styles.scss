@@ -138,4 +138,9 @@ $hover: lighten(#474747, 20%);
   background-color: #DEF2F1;
   height: auto;
   padding: 1% 0;
+  h2 {
+    padding-top: 1%;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
 }

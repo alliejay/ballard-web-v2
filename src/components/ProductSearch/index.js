@@ -1,10 +1,10 @@
 import React, { Component, useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import DropDown from '../../components/Dropdown/index.js';
 import { Button, Card, Col, Row, Space } from 'antd';
 import { EROS, BIKES, ALL } from '../../utilities/constants';
 import { PARENT_COMPANIES, BRANDS, transformData, eros, bikes } from '../../utilities/productMapping';
-import { forEach as _forEach, sortBy as _sortBy } from 'lodash';
+import { forEach as _forEach, sortBy as _sortBy, orderBy as _orderBy } from 'lodash';
 import './styles.scss';
 
 const ProductSearch = (props) => {
@@ -25,7 +25,8 @@ const ProductSearch = (props) => {
 
   useEffect(() => {
     const productInformation = transformData(selectedBrand, "products", search)
-    setData(productInformation.data);
+    const data = _orderBy(productInformation.data, ['itemPosition'], ['desc']);
+    setData(data);
     setProductTypes(productInformation.productTypes)
   }, [selectedBrand, search]);
 
@@ -52,7 +53,7 @@ const ProductSearch = (props) => {
         <div className="coverImage"><img src={item.image} /></div>
         <div className="links">
         <a href={item.walmartLink} target="new">Buy From Walmart</a>
-        {item.assemblyVideo && <a className="assemblyLink" href={item.assemblyVideo} target="new">View Assembly Video</a>}
+        {item.assemblyGuide && <Link className="assemblyLink" to={item.assemblyGuide} target="new">View Assembly Guide</Link>}
         </div>
       </Card>
     }));

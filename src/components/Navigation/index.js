@@ -79,7 +79,7 @@ const Navigation = () => {
         </div>
 
         <div className="fourthPanel panel" id="customerService">
-          <h2>Contact Customer Service</h2>
+          <h2>Customer Service</h2>
           <CustomerService />
         </div>
 
