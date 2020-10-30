@@ -17,6 +17,8 @@ import Contact from '../Contact/index';
 import disneyBanner from '../../img/disney_banner.jpg';
 import talonBanner from '../../img/talon_banner.jpg';
 import logo from '../../img/logo.png';
+import actionWheels from '../../img/action_wheels_bw.jpeg';
+
 import {
   MenuOutlined
 } from '@ant-design/icons';
@@ -48,6 +50,7 @@ const Navigation = () => {
           <div className="nav-container">
             <div className="nav-logo">
               <Link to="/"><img src={logo} className="logo" /></Link>
+              {/*<Link to="/"><img src={actionWheels} className="aw-logo" /></Link>*/}
             </div>
             <div className="nav">
               <div className="customerServiceNumber">

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f812b28-7a46-4f0b-8f1e-83733dc41209" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ProductSearch/index.js" afterPath="$PROJECT_DIR$/src/components/ProductSearch/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Brands/index.js" afterPath="$PROJECT_DIR$/src/components/Brands/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Navigation/index.js" afterPath="$PROJECT_DIR$/src/components/Navigation/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Navigation/styles.scss" afterPath="$PROJECT_DIR$/src/components/Navigation/styles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utilities/productMapping.js" afterPath="$PROJECT_DIR$/src/utilities/productMapping.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,11 +25,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.58367914">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Navigation/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="96" column="14" lean-forward="true" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+                <state relative-caret-position="150">
+                  <caret line="52" column="14" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="83" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -36,11 +37,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/ProductSearch/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="379">
-                  <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+                <state relative-caret-position="334">
+                  <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#62#0" expanded="true" />
                   </folding>
@@ -51,8 +52,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Brands/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+                <state relative-caret-position="131">
+                  <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -83,8 +84,8 @@
           <file leaf-file-name="productMapping.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/utilities/productMapping.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="262" column="33" lean-forward="true" selection-start-line="262" selection-start-column="33" selection-end-line="262" selection-end-column="33" />
+                <state relative-caret-position="551">
+                  <caret line="241" column="3" lean-forward="true" selection-start-line="241" selection-start-column="3" selection-end-line="241" selection-end-column="3" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -177,8 +178,8 @@
           <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Navigation/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="190" column="12" lean-forward="false" selection-start-line="190" selection-start-column="12" selection-end-line="190" selection-end-column="12" />
+                <state relative-caret-position="405">
+                  <caret line="45" column="10" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -293,17 +294,17 @@
         <option value="$PROJECT_DIR$/src/components/Manuals/index.js" />
         <option value="$PROJECT_DIR$/src/components/Dropdown/styles.scss" />
         <option value="$PROJECT_DIR$/src/components/ProductSearch/styles.scss" />
-        <option value="$PROJECT_DIR$/src/components/Brands/index.js" />
         <option value="$PROJECT_DIR$/src/components/Brands/styles.scss" />
         <option value="$PROJECT_DIR$/src/components/Dropdown/index.js" />
         <option value="$PROJECT_DIR$/src/components/About/styles.scss" />
         <option value="$PROJECT_DIR$/src/components/Manuals/styles.scss" />
-        <option value="$PROJECT_DIR$/src/components/Navigation/styles.scss" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/server.js" />
-        <option value="$PROJECT_DIR$/src/components/Navigation/index.js" />
-        <option value="$PROJECT_DIR$/src/utilities/productMapping.js" />
         <option value="$PROJECT_DIR$/src/components/ProductSearch/index.js" />
+        <option value="$PROJECT_DIR$/src/utilities/productMapping.js" />
+        <option value="$PROJECT_DIR$/src/components/Brands/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/styles.scss" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/index.js" />
       </list>
     </option>
   </component>
@@ -676,18 +677,18 @@
       <workItem from="1603216694636" duration="24347000" />
       <workItem from="1603457517092" duration="84000" />
       <workItem from="1603631500843" duration="26101000" />
-      <workItem from="1604062570163" duration="1712000" />
+      <workItem from="1604062570163" duration="2286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132258000" />
+    <option name="totallyTimeSpent" value="132832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1664" height="974" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09007912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13024954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.207483" sideWeight="0.19050518" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1037,16 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Brands/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ProductSearch/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -1106,14 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Navigation/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="190" column="12" lean-forward="false" selection-start-line="190" selection-start-column="12" selection-end-line="190" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1122,32 +1105,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Navigation/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ProductSearch/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="96" column="14" lean-forward="true" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+        <state relative-caret-position="334">
+          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utilities/productMapping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="262" column="33" lean-forward="true" selection-start-line="262" selection-start-column="33" selection-end-line="262" selection-end-column="33" />
+        <state relative-caret-position="551">
+          <caret line="241" column="3" lean-forward="true" selection-start-line="241" selection-start-column="3" selection-end-line="241" selection-end-column="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ProductSearch/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Brands/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        <state relative-caret-position="131">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
-            <element signature="e#0#62#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Navigation/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="45" column="10" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Navigation/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="52" column="14" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

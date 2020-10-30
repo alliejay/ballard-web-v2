@@ -31,11 +31,19 @@
 }
 
 .logo {
+   text-align: left;
+   width: 335px;
+   position: absolute;
+   top: -50px;
+   left: -55px;
+ }
+
+.aw-logo {
   text-align: left;
   width: 335px;
   position: absolute;
   top: -50px;
-  left: -55px;
+  left: -255px;
 }
 
 @media screen and (max-width: 814px) {

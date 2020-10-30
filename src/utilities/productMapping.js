@@ -45,7 +45,7 @@ const HONDA_EROS = [
     [productImage]: honda12vt,
     [walmartLink]: "https://www.walmart.com/ip/12-VOLT-HONDA-TALON-UTV-Honda-Official-Licensed-Product/577126686?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSdxJo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSdxJo0F:0Y0&sharedid=test",
     [assemblyGuide]: 'manuals/assembly/honda12v.pdf',
-    [itemPosition]: 0
+    [itemPosition]: 6
   },
   {
     [productName]: "6 Volt Honda Metropolitan Pink Battery Powered Ride-on",
@@ -57,13 +57,13 @@ const HONDA_EROS = [
     [productName]: "6 Volt Black Honda TRX Battery Powered Ride-On ATV",
     [productImage]: hondaBlack6,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Black-Honda-TRX-Battery-Powered-Ride-On-ATV/495925421",
-    [itemPosition]: 0
+    [itemPosition]: 5
   },
   {
     [productName]: "12 Volt Honda Black TRX Battery Powered Ride-On",
     [productImage]: hondaBlack12,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Honda-Black-TRX-Battery-Powered-Ride-On/399851452",
-    [itemPosition]: 0
+    [itemPosition]: 4
   }
 ];
 
@@ -77,7 +77,7 @@ const YAMAHA_EROS = [
     [productImage]: yamaha12vt,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-Raptor-Battery-Powered-Ride-on-Black-Green-New-Custom-Graphic-Design/861364225",
     [assemblyGuide]: 'manuals/assembly/yamaha12v.pdf',
-    [itemPosition]: 5
+    [itemPosition]: 8
   },
   {
     [productName]: "12 Volt Yamaha Grizzly Blue",
@@ -175,7 +175,7 @@ const THUNDER_TANK_EROS = [
     [productName]: "24 Volt Thunder Tank Ride-On With Working Cannon and Rotating Turret",
     [productImage]: thunderTank,
     [walmartLink]: "https://www.walmart.com/ip/NEW-WALMART-EXCLUSIVE-24-Volt-Thunder-Tank-Ride-On-With-Working-Cannon-and-Rotating-Turret/204394575?athcpid=204394575&athpgid=athenaItemPage&athcgid=null&athznid=PWVAV&athieid=v0&athstid=CS020&athguid=e917c4fe-007-175425342f7517&athancid=null&athena=true",
-    [itemPosition]: 4
+    [itemPosition]: 7
   },
 ];
 
@@ -230,7 +230,7 @@ const SEA_SCOOTER_EROS = [
     [productName]: "12 Volt SEASCOOTER - Battery Powered Ride-On Water Toy",
     [productImage]: seaScooter,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-SEASCOOTER-Exciting-New-Wal-Mart-Exclusive-Battery-Powered-Ride-On-Water-Toy/945884402",
-    [itemPosition]: 6
+    [itemPosition]: 9
   },
 ];
 
