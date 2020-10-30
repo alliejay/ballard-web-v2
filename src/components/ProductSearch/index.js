@@ -12,12 +12,12 @@ const ProductSearch = (props) => {
   const searchTerm = location.state && location.state.searchTerm ? location.state.searchTerm : ALL;
   const selectText = location.state && location.state.brand ? location.state.brand : "Select Brand";
 
-  const [search, setSearchTerm] = useState(searchTerm);
+  const [search, setSearchTerm] = useState(ALL);
   const [data, setData] = useState([]);
   const [cards, setCards] = useState();
 
   const [selectedBrand, setSelectText] = useState(selectText);
-  const [productTypes, setProductTypes] = useState([eros, bikes]);
+  const [productTypes, setProductTypes] = useState([ALL, eros, bikes]);
 
   const handleClick = (item) => {
     setSelectText(item.key)
@@ -51,7 +51,12 @@ const ProductSearch = (props) => {
         key={index}>
         <div className="coverImage"><img src={item.image} /></div>
         <div className="links">
-        <a href={item.walmartLink} target="new">Buy From Walmart</a>
+          {
+            item.walmartLink && <a href={item.walmartLink} target="new">Buy From Walmart</a>
+          }
+          {
+            item.dunhamLink && <a href={item.dunhamLink} target="new">Buy From Dunham's Sports</a>
+          }
         {item.assemblyGuide && <Link className="assemblyLink" to={item.assemblyGuide} target="new">View Assembly Guide</Link>}
         </div>
       </Card>
@@ -59,6 +64,7 @@ const ProductSearch = (props) => {
   }, [data]);
 
   if(!productTypes.includes(search)) {
+    console.log("productTypes", productTypes)
     setSearchTerm(productTypes[0])
   }
 
@@ -72,24 +78,24 @@ const ProductSearch = (props) => {
           selectText={selectedBrand}
           handleClick={handleClick}/>
 
-        {/*{*/}
-          {/*productTypes.length == 3 &&*/}
-          {/*<Button type={search == ALL && 'primary'}*/}
-                  {/*onClick={() => setSearchTerm(ALL)}*/}
-                  {/*className="productSearchButton">ALL</Button>*/}
-        {/*}*/}
-        {/*{*/}
-          {/*productTypes.includes(eros) &&*/}
-          {/*<Button type={search == eros && 'primary'}*/}
-                  {/*onClick={() => setSearchTerm(eros)}*/}
-                  {/*className="productSearchButton">ELECTRIC RIDE ONS</Button>*/}
-        {/*}*/}
-        {/*{*/}
-          {/*productTypes.includes(bikes) &&*/}
-          {/*<Button type={search == bikes && 'primary'}*/}
-                  {/*onClick={() => setSearchTerm(bikes)}*/}
-                  {/*className="productSearchButton">BICYCLES</Button>*/}
-        {/*}*/}
+        {
+          productTypes.length == 3 &&
+          <Button type={search == ALL && 'primary'}
+                  onClick={() => setSearchTerm(ALL)}
+                  className="productSearchButton">ALL</Button>
+        }
+        {
+          productTypes.includes(eros) &&
+          <Button type={search == eros && 'primary'}
+                  onClick={() => setSearchTerm(eros)}
+                  className="productSearchButton">ELECTRIC RIDE ONS</Button>
+        }
+        {
+          productTypes.includes(bikes) &&
+          <Button type={search == bikes && 'primary'}
+                  onClick={() => setSearchTerm(bikes)}
+                  className="productSearchButton">BICYCLES</Button>
+        }
 
       </div>
 

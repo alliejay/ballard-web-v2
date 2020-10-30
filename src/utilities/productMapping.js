@@ -20,10 +20,18 @@ import yamahaXYZ from '../img/products/yamaha12vtXYZ.jpeg';
 import yamahaViking from '../img/products/yamahaViking.jpeg';
 import hondaBlack6 from '../img/products/hondaBlack6vt.jpeg';
 import hondaBlack12 from '../img/products/hondaBlack12.jpeg';
+import yamaha16in from '../img/products/yamaha16in.jpeg';
+import yamaha12in from '../img/products/yamaha12in.jpeg';
+import batman16in from '../img/products/batman16in.jpeg';
+import batman12in from '../img/products/batman12in.jpeg';
+import wonderWoman16in from '../img/products/wonderWoman16in.jpeg';
+import columbiaTeton20 from '../img/products/columbiaTeton20.png';
+import columbiaHybrid700 from '../img/products/columbiaHybrid700.png';
 
 const productName = "productName";
 const productImage = "productImage";
 const walmartLink = "walmartLink";
+const dunhamLink = "dunhamLink";
 const assemblyVideo = "assemblyVideo";
 export const eros = "electricRideOns";
 export const bikes = "bikes";
@@ -91,20 +99,25 @@ const YAMAHA_EROS = [
   }
 ];
 
-// const YAMAHA_BIKES = [
-//   {
-//     [productName]: 'Yamaha 12" Moto BMX Boys Bike, Blue',
-//     [productImage]: yamahabikeblue,
-//     [walmartLink]: "https://www.walmart.com/ip/Yamaha-12-Moto-BMX-Boys-Bike-Blue/17242520",
-//     [assemblyVideo]: "https://youtu.be/NyrBgppnTHY",
-//     [videoEmbed]: <iframe width="560" height="315" src="https://www.youtube.com/embed/NyrBgppnTHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-//   }
-// ];
+const YAMAHA_BIKES = [
+  {
+    [productName]: 'Yamaha 16" Moto BMX Boys Bike',
+    [productImage]: yamaha16in,
+    [walmartLink]: "https://www.walmart.com/ip/Yamaha-16-Moto-BMX-Boys-Bike-Blue/21616169?wmlspartner=wlpa&selectedSellerId=0&adid=22222222222016073267&wmlspartner=wmtlabs&wl0=e&wl1=s&wl2=c&wl3=10374944981&wl4=pla-1105723423981&wl12=21616169_0&wl14=walmart%20yamaha%20bike&veh=sem&msclkid=e26ff0727bb117847151afebdedfc5ac",
+    [itemPosition]: 0
+  },
+  {
+    [productName]: 'Yamaha 12" Moto BMX Boys Bike',
+    [productImage]: yamaha12in,
+    [walmartLink]: "https://www.walmart.com/ip/Yamaha-12-Moto-BMX-Boys-Bike-Blue/17242520?wmlspartner=wlpa&selectedSellerId=0&adid=22222222222014286765&wmlspartner=wmtlabs&wl0=e&wl1=s&wl2=c&wl3=10354037913&wl4=pla-1105703855993&wl12=17242520_0&wl14=walmart%20yamaha%20bike&veh=sem&msclkid=721fce83a6b91b89f726911a03d7f31f",
+    [itemPosition]: 0
+  }
+];
 
 
 const YAMAHA_PRODUCTS = {
   [eros]: YAMAHA_EROS,
-  // [bikes]: YAMAHA_BIKES
+  [bikes]: YAMAHA_BIKES
 };
 
 
@@ -185,8 +198,31 @@ const BATMAN_EROS = [
   },
 ];
 
+//TODO change to DC_COMICS
+const BATMAN_BIKES = [
+  {
+    [productName]: 'DC Comics 16" Batman Boys Bike',
+    [productImage]: batman16in,
+    [walmartLink]: "https://www.walmart.com/ip/DC-Comics-16-Batman-Boys-Bike/379787122",
+    [itemPosition]: 0
+  },
+  {
+    [productName]: 'DC Comics 12" Batman Boys Bike',
+    [productImage]: batman12in,
+    [walmartLink]: "https://www.walmart.com/ip/DC-Comics-12-Batman-Boys-Bike/251527546",
+    [itemPosition]: 0
+  },
+  {
+    [productName]: "16 Inch Wonder Woman Girl's Bike",
+    [productImage]: wonderWoman16in,
+    [walmartLink]: "https://www.walmart.com/ip/16-Inch-Wonder-Woman-Girl-s-Bike-Give-the-neighborhood-some-Girl-Power/366173863",
+    [itemPosition]: 0
+  }
+];
+
 const BATMAN_PRODUCTS = {
   [eros]: BATMAN_EROS,
+  [bikes]: BATMAN_BIKES
 };
 
 const SEA_SCOOTER_EROS = [
@@ -202,6 +238,25 @@ const SEA_SCOOTER_PRODUCTS = {
   [eros]: SEA_SCOOTER_EROS,
 };
 
+const COLUMBIA_BIKES = [
+  {
+    [productName]: 'Columbia Boys 20" Teton Dual Suspension Bike',
+    [productImage]: columbiaTeton20,
+    [dunhamLink]: "https://www.dunhamssports.com/product/boys_20_teton_dual_suspension_bike/W0000074810.html#q=columbia%2Bbike&lang=en_US&start=1",
+    [itemPosition]: 0
+  },
+  {
+  [productName]: 'Columbia Mens 700c Dual Hybrid Mountain Bicycle',
+    [productImage]: columbiaHybrid700,
+    [dunhamLink]: "https://www.dunhamssports.com/product/mens_700c_dual_hybrid_mountain_bicycle/W0000091232.html#q=columbia%2Bbike&lang=en_US&start=2",
+    [itemPosition]: 0
+}
+];
+
+const COLUMBIA_PRODUCTS = {
+  [bikes]: COLUMBIA_BIKES,
+};
+
 
 //************************ COMPILE PRODUCT LISTS
 
@@ -209,33 +264,41 @@ export const PARENT_COMPANIES = [
   {
     name: "Action Wheels",
     productList: [HONDA_PRODUCTS, YAMAHA_PRODUCTS, DISNEY_PRODUCTS, THUNDER_TANK_PRODUCTS, BATMAN_PRODUCTS, SEA_SCOOTER_PRODUCTS]
+  },
+  {
+    name: "Columbia",
+    productList: [COLUMBIA_PRODUCTS]
   }
 ];
 
 export const BRANDS = [
   {
-    name: "Honda",
-    productList: [HONDA_PRODUCTS]
+    name: "Columbia",
+    productList: [COLUMBIA_PRODUCTS]
   },
   {
-    name: "Yamaha",
-    productList: [YAMAHA_PRODUCTS]
+    name: "DC Comics",
+    productList: [BATMAN_PRODUCTS]
   },
   {
     name: "Disney",
     productList: [DISNEY_PRODUCTS]
   },
   {
-    name: "Thunder Tank",
-    productList: [THUNDER_TANK_PRODUCTS]
-  },
-  {
-    name: "Batman",
-    productList: [BATMAN_PRODUCTS]
+    name: "Honda",
+    productList: [HONDA_PRODUCTS]
   },
   {
     name: "SeaScooter",
     productList: [SEA_SCOOTER_PRODUCTS]
+  },
+  {
+    name: "Thunder Tank",
+    productList: [THUNDER_TANK_PRODUCTS]
+  },
+  {
+    name: "Yamaha",
+    productList: [YAMAHA_PRODUCTS]
   }
 ];
 
@@ -299,6 +362,7 @@ export const transformData = (category, target, productType = null) => {
             name: product[productName],
             image: product[productImage],
             walmartLink: product[walmartLink],
+            dunhamLink: product[dunhamLink],
             assemblyVideo: product[assemblyVideo],
             assemblyGuide: product[assemblyGuide],
             itemPosition: product[itemPosition]
@@ -320,6 +384,7 @@ export const transformData = (category, target, productType = null) => {
             name: product[productName],
             image: product[productImage],
             walmartLink: product[walmartLink],
+            dunhamLink: product[dunhamLink],
             assemblyVideo: product[assemblyVideo],
             assemblyGuide: product[assemblyGuide],
             itemPosition: product[itemPosition]
