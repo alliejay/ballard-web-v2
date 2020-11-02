@@ -25,7 +25,7 @@ import yamaha12in from '../img/products/yamaha12in.jpeg';
 import batman16in from '../img/products/batman16in.jpeg';
 import batman12in from '../img/products/batman12in.jpeg';
 import wonderWoman16in from '../img/products/wonderWoman16in.jpeg';
-import columbiaTeton20 from '../img/products/columbiaTeton20_2.png';
+import columbiaTeton20 from '../img/products/columbiaTeton20.png';
 import columbiaHybrid700 from '../img/products/columbiaHybrid700.png';
 
 const productName = "productName";
