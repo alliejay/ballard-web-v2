@@ -25,7 +25,7 @@ import yamaha12in from '../img/products/yamaha12in.jpeg';
 import batman16in from '../img/products/batman16in.jpeg';
 import batman12in from '../img/products/batman12in.jpeg';
 import wonderWoman16in from '../img/products/wonderWoman16in.jpeg';
-import columbiaTeton20 from '../img/products/columbiaTeton20.png';
+import columbiaTeton20 from '../img/products/columbiaTeton20_2.png';
 import columbiaHybrid700 from '../img/products/columbiaHybrid700.png';
 
 const productName = "productName";
@@ -175,7 +175,8 @@ const THUNDER_TANK_EROS = [
     [productName]: "24 Volt Thunder Tank Ride-On With Working Cannon and Rotating Turret",
     [productImage]: thunderTank,
     [walmartLink]: "https://www.walmart.com/ip/NEW-WALMART-EXCLUSIVE-24-Volt-Thunder-Tank-Ride-On-With-Working-Cannon-and-Rotating-Turret/204394575?athcpid=204394575&athpgid=athenaItemPage&athcgid=null&athznid=PWVAV&athieid=v0&athstid=CS020&athguid=e917c4fe-007-175425342f7517&athancid=null&athena=true",
-    [itemPosition]: 7
+    [itemPosition]: 7,
+    [assemblyGuide]: 'manuals/assembly/thunder_tank.pdf',
   },
 ];
 

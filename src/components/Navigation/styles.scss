@@ -9,8 +9,8 @@
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 814px) {
-  .nav-container {
+@media screen and (max-width: 1055px) {
+  .nav-container, .navigation {
     height: 100px;
   }
 }
@@ -32,18 +32,28 @@
 
 .logo {
    text-align: left;
-   width: 335px;
+   width: 360px;
    position: absolute;
-   top: -50px;
-   left: -55px;
+   top: -62px;
+   left: -70px;
  }
 
 .aw-logo {
   text-align: left;
-  width: 335px;
+  width: 233px;
   position: absolute;
-  top: -50px;
-  left: -255px;
+  top: 30px;
+  left: 190px;
+}
+
+@media screen and (max-width: 1055px) {
+  .logo {
+    width: 340px;
+  }
+  .aw-logo {
+    width: 220px;
+    top: 23px;
+  }
 }
 
 @media screen and (max-width: 814px) {
@@ -76,27 +86,33 @@
   float: right;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1185px) {
+  .nav {
+    font-size: 19px;
+  }
+}
+
+//@media screen and (max-width: 1150px) {
+//  .nav {
+//    font-size: 18px;
+//  }
+//}
+
+@media screen and (max-width: 1090px) {
+  .nav {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .nav {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 814px) {
+@media screen and (max-width: 970px) {
   .nav {
     font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 775px) {
-  .nav {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 730px) {
-  .nav {
-    font-size: 13px;
   }
 }
 
@@ -134,34 +150,37 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .nav-list {
-    font-size: 18px;
+    li {
+      margin: auto 1.5%;
+    }
   }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1120px) {
+  .nav-list {
+    li {
+      margin: auto 1%;
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .nav-list {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .nav-list {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 814px) {
+@media screen and (max-width: 970px) {
   .nav-list {
     font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 775px) {
-  .nav-list {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 730px) {
-  .nav-list {
-    font-size: 13px;
-    top: 30px;
   }
 }
 
@@ -169,7 +188,7 @@
   display: none;
 }
 
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 945px) {
   .nav {
     display: none;
   }

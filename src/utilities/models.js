@@ -38,6 +38,10 @@ export const assemblyGuides = [
   {
     label: "12 Volt Yamaha Raptor ATV",
     urlParam: "/manuals/assembly/yamaha12v.pdf"
+  },
+  {
+    label: "24 Volt Thunder Tank",
+    urlParam: "/manuals/assembly/thunder_tank.pdf"
   }
 ];
 
