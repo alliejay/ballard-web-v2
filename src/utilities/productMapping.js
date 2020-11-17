@@ -51,7 +51,8 @@ const HONDA_EROS = [
     [productName]: "6 Volt Honda Metropolitan Pink Battery Powered Ride-on",
     [productImage]: hondaScooter,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Honda-Metropolitan-Pink-Battery-Powered-Ride-on-Perfect-for-your-darling-little-girl/883630988?athcpid=883630988&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=7928bce8-007-175425412cc12d&athancid=null&athena=true",
-    [itemPosition]: -2
+    [itemPosition]: -2,
+    [assemblyGuide]: "manuals/assembly/honda6vScooter.pdf"
   },
   {
     [productName]: "6 Volt Black Honda TRX Battery Powered Ride-On ATV",
@@ -89,13 +90,15 @@ const YAMAHA_EROS = [
     [productName]: "12 Volt Yamaha YXZ Battery Powered Ride-On",
     [productImage]: yamahaXYZ,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-YXZ-Battery-Powered-Ride-On-Aggressive-Design-for-serious-Off-Road-Fun/55627504",
+    [assemblyGuide]: "manuals/assembly/yamahaXYZ.pdf",
     [itemPosition]: -1
   },
   {
     [productName]: "6 Volt Yamaha Viking Battery Powered Ride-On",
     [productImage]: yamahaViking,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Yamaha-Viking-Battery-Powered-Ride-On-Hours-of-fun-with-this-kid-size-UTV/52674911",
-    [itemPosition]: 0
+    [itemPosition]: 0,
+    [assemblyGuide]: "manuals/assembly/yamahaViking.pdf"
   }
 ];
 
@@ -126,12 +129,14 @@ const DISNEY_EROS = [
     [productName]: "Disney Princess Mercedes 6-Volt Battery Powered Ride-On",
     [productImage]: disneyPrincess,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Princess-Mercedes-6-Volt-Battery-Powered-Ride-On-Perfect-for-your-little-Princess/842112795",
+    [assemblyGuide]: "manuals/assembly/disneyPrincess6v.pdf",
     [itemPosition]: 3
   },
   {
     [productName]: "Disney Frozen Convertible Car 6-Volt Battery-Powered Ride-On",
     [productImage]: disneyFrozen,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Convertible-Car-6-Volt-Battery-Powered-Ride-On/37312935?athcpid=37312935&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=13236ddb-007-1754250813b751&athancid=null&athena=true",
+    [assemblyGuide]: "manuals/assembly/disneyFrozenConvertible.pdf",
     [itemPosition]: 2
   },
   {
@@ -156,6 +161,7 @@ const DISNEY_EROS = [
     [productName]: "6 Volt Disney Frozen 3-Wheel Scooter Battery Powered Ride-On",
     [productImage]: disneyFrozenScooter,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Disney-Frozen-3-Wheel-Scooter-Battery-Powered-Ride-On/52674914?athcpid=52674914&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=27d5dfe0-007-1754253cdd895f&athancid=null&athena=true",
+    [assemblyGuide]: "manuals/assembly/disneyFrozenScooter.pdf",
     [itemPosition]: 0
   },
   {
@@ -176,7 +182,7 @@ const THUNDER_TANK_EROS = [
     [productImage]: thunderTank,
     [walmartLink]: "https://www.walmart.com/ip/NEW-WALMART-EXCLUSIVE-24-Volt-Thunder-Tank-Ride-On-With-Working-Cannon-and-Rotating-Turret/204394575?athcpid=204394575&athpgid=athenaItemPage&athcgid=null&athznid=PWVAV&athieid=v0&athstid=CS020&athguid=e917c4fe-007-175425342f7517&athancid=null&athena=true",
     [itemPosition]: 7,
-    [assemblyGuide]: 'manuals/assembly/thunder_tank.pdf',
+    [assemblyGuide]: 'manuals/assembly/thunder_tank.pdf'
   },
 ];
 
@@ -189,12 +195,14 @@ const BATMAN_EROS = [
     [productName]: "6 Volt DC Comics Batman Batmobile Battery Powered Ride-on",
     [productImage]: batMobile,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-DC-Comics-Batman-Batmobile-Battery-Powered-Ride-on-Features-Light-up-Cannons-and-Sounds/513873743",
+    [assemblyGuide]: "manuals/assembly/dcComicsBatman6v.pdf",
     [itemPosition]: 0
   },
   {
     [productName]: "Batman Batmobile 6-Volt Battery-Powered Ride-On",
     [productImage]: batMobile6,
     [walmartLink]: "https://www.walmart.com/ip/Batman-Batmobile-6-Volt-Battery-Powered-Ride-On/53341544?athcpid=53341544&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=a155d614-008-17542590d9f64d&athancid=null&athena=true",
+    [assemblyGuide]: 'manuals/assembly/batmobile.pdf',
     [itemPosition]: 0
   },
 ];
