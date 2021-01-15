@@ -48,32 +48,16 @@ export const assemblyGuides = [
     urlParam: "manuals/assembly/disneyPrincess6v.pdf"
   },
   {
-    label: "Disney 6 Volt Frozen 3-Wheel Scooter Battery Powered Ride-On",
-    urlParam: "manuals/assembly/disneyFrozenScooter.pdf"
+    label: "Disney 12 Volt Frozen Mercedes Ride-On",
+    urlParam: 'manuals/assembly/disneyFrozen12v.pdf'
   },
   {
-    label: "DC Comics Batman Batmobile 6-Volt Battery-Powered Ride-On",
-    urlParam: "manuals/assembly/batmobile.pdf"
-  },
-  {
-    label: "Yamaha 12 Volt YXZ Battery Powered Ride-On",
-    urlParam: "manuals/assembly/yamahaXYZ.pdf"
-  },
-  {
-    label: "Disney Frozen Convertible Car 6-Volt Battery-Powered Ride-On",
-    urlParam: "manuals/assembly/disneyFrozenConvertible.pdf"
+    label: "Disney Princess 12 Volt Ride-On",
+    urlParam: 'manuals/assembly/disneyPrincess12v.pdf'
   },
   {
     label: "Honda 6 Volt Metropolitan Pink Battery Powered Ride-on",
     urlParam: "manuals/assembly/honda6vScooter.pdf"
-  },
-  {
-    label: "DC Comics 6 Volt Batman Batmobile Battery Powered Ride-on",
-    urlParam: "manuals/assembly/dcComicsBatman6v.pdf"
-  },
-  {
-    label: "Yamaha 6 Volt Viking Battery Powered Ride-On",
-    urlParam: "manuals/assembly/yamahaViking.pdf"
   },
   {
     label: "Mercedes-Benz SL-400 6 Volt Ride-On",
@@ -86,15 +70,21 @@ export const assemblyGuides = [
   {
     label: "Ryan's World ATV Ride-On",
     urlParam: "manuals/assembly/ryanATV.pdf"
+  },
+  {
+    label: "12 Volt Minnie Mouse Mercedes GLS-320 Battery Powered Ride-On",
+    urlParam: "manuals/assembly/minnieMouse12v.pdf"
   }
 ];
 
-
-
 export const manuals = [
   {
-    label: "6v Disney Princess Scooter",
-    urlParam: "/manuals/user/disneyprincess6v.pdf"
+    label: "Disney Princess 6-Volt Scooter",
+    urlParam: "/manuals/user/disneyPrincess6vScooter.pdf"
+  },
+  {
+    label: "Disney Princess Mercedes 6-Volt Battery Powered Ride-On",
+    urlParam: "/manuals/user/disneyPrincess6v.pdf"
   },
   {
     label: "6v Sofia Car",
@@ -103,5 +93,57 @@ export const manuals = [
   {
     label: "6v Yamaha ATV",
     urlParam: "/manuals/user/yamahaatv6v.pdf"
-  }
+  },
+  {
+    label: "Honda 6 Volt Metropolitan Pink Battery Powered Ride-on",
+    urlParam: "manuals/user/honda6vScooter.pdf"
+  },
+  {
+    label: "6 Volt Black Honda TRX Battery Powered Ride-On ATV",
+    urlParam: "manuals/user/honda6vTRX.pdf"
+  },
+  {
+    label: "Disney Princess 12 Volt Ride-On",
+    urlParam: 'manuals/user/disneyPrincess12v.pdf'
+  },
+  {
+    label: "12 Volt Minnie Mouse Mercedes GLS-320 Battery Powered Ride-On",
+    urlParam: "manuals/user/minnieMouse12v.pdf"
+  },
+  {
+    label: "Disney 12 Volt Frozen Mercedes Ride-On",
+    urlParam: 'manuals/user/disneyFrozen12v.pdf'
+  },
+  {
+    label: "Thunder Tank 24 Volt Ride-On With Working Cannon and Rotating Turret",
+    urlParam: "manuals/user/thunder_tank.pdf"
+  },
+  {
+    label: "Honda 12 Volt Talon UTV",
+    urlParam: "manuals/user/honda12v.pdf"
+  },
+  {
+    label: "Disney Frozen Convertible Car 6-Volt Battery-Powered Ride-On",
+    urlParam: "manuals/user/disneyFrozenConvertible.pdf"
+  },
+  {
+    label: "Yamaha 6 Volt Viking Battery Powered Ride-On",
+    urlParam: "manuals/user/yamahaViking.pdf"
+  },
+  {
+    label: "Disney 6 Volt Frozen 3-Wheel Scooter Battery Powered Ride-On",
+    urlParam: "manuals/user/disneyFrozenScooter.pdf"
+  },
+  {
+    label: "DC Comics 6 Volt Batman Batmobile Battery Powered Ride-on",
+    urlParam: "manuals/user/dcComicsBatman6v.pdf"
+  },
+  {
+    label: "DC Comics Batman Batmobile 6-Volt Battery-Powered Ride-On",
+    urlParam: "manuals/user/batmobile.pdf"
+  },
+  {
+    label: "Yamaha 12 Volt YXZ Battery Powered Ride-On",
+    urlParam: "manuals/user/yamahaXYZ.pdf"
+  },
 ];

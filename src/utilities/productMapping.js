@@ -41,7 +41,7 @@ const itemPosition = "itemPosition";
 
 const HONDA_EROS = [
   {
-    [productName]: "12 VOLT HONDA TALON UTV",
+    [productName]: "Honda 12 Volt Talon UTV",
     [productImage]: honda12vt,
     [walmartLink]: "https://www.walmart.com/ip/12-VOLT-HONDA-TALON-UTV-Honda-Official-Licensed-Product/577126686?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSdxJo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSdxJo0F:0Y0&sharedid=test",
     [assemblyGuide]: 'manuals/assembly/honda12v.pdf',
@@ -90,15 +90,13 @@ const YAMAHA_EROS = [
     [productName]: "12 Volt Yamaha YXZ Battery Powered Ride-On",
     [productImage]: yamahaXYZ,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-YXZ-Battery-Powered-Ride-On-Aggressive-Design-for-serious-Off-Road-Fun/55627504",
-    [assemblyGuide]: "manuals/assembly/yamahaXYZ.pdf",
     [itemPosition]: -1
   },
   {
     [productName]: "6 Volt Yamaha Viking Battery Powered Ride-On",
     [productImage]: yamahaViking,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Yamaha-Viking-Battery-Powered-Ride-On-Hours-of-fun-with-this-kid-size-UTV/52674911",
-    [itemPosition]: 0,
-    [assemblyGuide]: "manuals/assembly/yamahaViking.pdf"
+    [itemPosition]: 0
   }
 ];
 
@@ -129,14 +127,12 @@ const DISNEY_EROS = [
     [productName]: "Disney Princess Mercedes 6-Volt Battery Powered Ride-On",
     [productImage]: disneyPrincess,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Princess-Mercedes-6-Volt-Battery-Powered-Ride-On-Perfect-for-your-little-Princess/842112795",
-    [assemblyGuide]: "manuals/assembly/disneyPrincess6v.pdf",
     [itemPosition]: 3
   },
   {
     [productName]: "Disney Frozen Convertible Car 6-Volt Battery-Powered Ride-On",
     [productImage]: disneyFrozen,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Convertible-Car-6-Volt-Battery-Powered-Ride-On/37312935?athcpid=37312935&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=13236ddb-007-1754250813b751&athancid=null&athena=true",
-    [assemblyGuide]: "manuals/assembly/disneyFrozenConvertible.pdf",
     [itemPosition]: 2
   },
   {
@@ -149,6 +145,7 @@ const DISNEY_EROS = [
     [productName]: "12 Volt Minnie Mouse Mercedes GLS-320 Battery Powered Ride-On",
     [productImage]: minnieMouse,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Minnie-Mouse-Mercedes-GLS-320-Battery-Powered-Ride-On/139212311?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSYXJo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSYXJo0F:0Y0&sharedid=test",
+    [assemblyGuide]: "manuals/assembly/minnieMouse12v.pdf",
     [itemPosition]: 0
   },
   {
@@ -161,7 +158,6 @@ const DISNEY_EROS = [
     [productName]: "6 Volt Disney Frozen 3-Wheel Scooter Battery Powered Ride-On",
     [productImage]: disneyFrozenScooter,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Disney-Frozen-3-Wheel-Scooter-Battery-Powered-Ride-On/52674914?athcpid=52674914&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=27d5dfe0-007-1754253cdd895f&athancid=null&athena=true",
-    [assemblyGuide]: "manuals/assembly/disneyFrozenScooter.pdf",
     [itemPosition]: 0
   },
   {
@@ -195,14 +191,12 @@ const BATMAN_EROS = [
     [productName]: "6 Volt DC Comics Batman Batmobile Battery Powered Ride-on",
     [productImage]: batMobile,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-DC-Comics-Batman-Batmobile-Battery-Powered-Ride-on-Features-Light-up-Cannons-and-Sounds/513873743",
-    [assemblyGuide]: "manuals/assembly/dcComicsBatman6v.pdf",
     [itemPosition]: 0
   },
   {
     [productName]: "Batman Batmobile 6-Volt Battery-Powered Ride-On",
     [productImage]: batMobile6,
     [walmartLink]: "https://www.walmart.com/ip/Batman-Batmobile-6-Volt-Battery-Powered-Ride-On/53341544?athcpid=53341544&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=a155d614-008-17542590d9f64d&athancid=null&athena=true",
-    [assemblyGuide]: 'manuals/assembly/batmobile.pdf',
     [itemPosition]: 0
   },
 ];
