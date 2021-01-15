@@ -7,6 +7,7 @@ import './styles.scss';
 
 const Manuals = () => {
   const guides = _sortBy(assemblyGuides, ['label']);
+  const userManuals = _sortBy(manuals, ['label']);
 
   return (
     <div className="manuals">
@@ -21,7 +22,7 @@ const Manuals = () => {
       {/*<br />*/}
 
       <h3 className="dropdown-text">User Manuals: </h3>
-        <DropDown options={manuals} label="Select Product" baseUrl={MANUALS} className="user-dropdown"/>
+        <DropDown options={userManuals} label="Select Product" baseUrl={MANUALS} className="user-dropdown"/>
         <br/>
       </div>
 

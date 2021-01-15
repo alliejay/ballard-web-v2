@@ -72,7 +72,7 @@ export const assemblyGuides = [
     urlParam: "manuals/assembly/ryanATV.pdf"
   },
   {
-    label: "12 Volt Minnie Mouse Mercedes GLS-320 Battery Powered Ride-On",
+    label: "Minnie Mouse 12 Volt Mercedes GLS-320 Battery Powered Ride-On",
     urlParam: "manuals/assembly/minnieMouse12v.pdf"
   }
 ];
@@ -87,11 +87,11 @@ export const manuals = [
     urlParam: "/manuals/user/disneyPrincess6v.pdf"
   },
   {
-    label: "6v Sofia Car",
+    label: "Disney 6 Colt Sofia Car",
     urlParam: "/manuals/user/sofia6v.pdf"
   },
   {
-    label: "6v Yamaha ATV",
+    label: "Yamaha 6 Volt ATV",
     urlParam: "/manuals/user/yamahaatv6v.pdf"
   },
   {
@@ -99,7 +99,7 @@ export const manuals = [
     urlParam: "manuals/user/honda6vScooter.pdf"
   },
   {
-    label: "6 Volt Black Honda TRX Battery Powered Ride-On ATV",
+    label: "Honda 6 Volt Black TRX Battery Powered Ride-On ATV",
     urlParam: "manuals/user/honda6vTRX.pdf"
   },
   {
@@ -107,7 +107,7 @@ export const manuals = [
     urlParam: 'manuals/user/disneyPrincess12v.pdf'
   },
   {
-    label: "12 Volt Minnie Mouse Mercedes GLS-320 Battery Powered Ride-On",
+    label: "Minnie Mouse 12 Volt Mercedes GLS-320 Battery Powered Ride-On",
     urlParam: "manuals/user/minnieMouse12v.pdf"
   },
   {
