@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f812b28-7a46-4f0b-8f1e-83733dc41209" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Contact/styles.scss" afterPath="$PROJECT_DIR$/src/components/Contact/styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Dropdown/styles.scss" afterPath="$PROJECT_DIR$/src/components/Dropdown/styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Manuals/styles.scss" afterPath="$PROJECT_DIR$/src/components/Manuals/styles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Navigation/styles.scss" afterPath="$PROJECT_DIR$/src/components/Navigation/styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ProductSearch/index.js" afterPath="$PROJECT_DIR$/src/components/ProductSearch/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ProductSearch/styles.scss" afterPath="$PROJECT_DIR$/src/components/ProductSearch/styles.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -169,21 +163,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Contact/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="439">
-                  <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Navigation/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="202">
-                  <caret line="346" column="6" lean-forward="true" selection-start-line="346" selection-start-column="6" selection-end-line="346" selection-end-column="6" />
+                <state relative-caret-position="210">
+                  <caret line="74" column="16" lean-forward="false" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -295,12 +289,12 @@
         <option value="$PROJECT_DIR$/src/utilities/productMapping.js" />
         <option value="$PROJECT_DIR$/src/utilities/models.js" />
         <option value="$PROJECT_DIR$/src/components/Manuals/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Navigation/styles.scss" />
         <option value="$PROJECT_DIR$/src/components/Dropdown/styles.scss" />
         <option value="$PROJECT_DIR$/src/components/Manuals/styles.scss" />
         <option value="$PROJECT_DIR$/src/components/ProductSearch/index.js" />
         <option value="$PROJECT_DIR$/src/components/ProductSearch/styles.scss" />
         <option value="$PROJECT_DIR$/src/components/Contact/styles.scss" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/styles.scss" />
       </list>
     </option>
   </component>
@@ -712,12 +706,12 @@
       <workItem from="1605625551480" duration="1331000" />
       <workItem from="1605724261318" duration="813000" />
       <workItem from="1610735769289" duration="4662000" />
-      <workItem from="1617211112329" duration="2918000" />
+      <workItem from="1617211112329" duration="3216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151255000" />
+    <option name="totallyTimeSpent" value="151553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="16" y="23" width="1664" height="974" extended-state="0" />
@@ -1165,18 +1159,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Navigation/styles.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Contact/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="346" column="6" lean-forward="true" selection-start-line="346" selection-start-column="6" selection-end-line="346" selection-end-column="6" />
+        <state relative-caret-position="210">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Contact/styles.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Navigation/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        <state relative-caret-position="210">
+          <caret line="74" column="16" lean-forward="false" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
           <folding />
         </state>
       </provider>
