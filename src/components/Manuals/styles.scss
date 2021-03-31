@@ -48,6 +48,15 @@
   }
 }
 
+.guide-dropdowns {
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  position: absolute;
+  left: 10%;
+  display: inline-block;
+}
+
 @media screen and (max-width: 520px) {
   .secondPanel h2 {
     font-size: 20px;
@@ -61,28 +70,24 @@
   }
   .guide-dropdowns {
     h3 {
-      font-size: 16px;
+      font-size: 15px;
     }
   }
   #self-help-text {
     width: 85%;
     margin: 0 auto;
   }
-}
-
-
-.guide-dropdowns {
-  width: 100%;
-  margin: auto;
-  margin-top: 30px;
-  position: absolute;
-  left: 10%;
-  display: inline-block;
-}
-
-@media screen and (max-width: 520px) {
   .guide-dropdowns {
-    width: 90%;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .guide-dropdowns {
+    h3 {
+      font-size: 14px;
+    }
+    left: 0;
   }
 }
 
