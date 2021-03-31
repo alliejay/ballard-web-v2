@@ -77,7 +77,7 @@ const ProductSearch = (props) => {
           options={createBrandList()}
           selectText={selectedBrand}
           handleClick={handleClick}/>
-
+        <span className="productFilters">
         {
           productTypes.length == 3 &&
           <Button type={search == ALL && 'primary'}
@@ -96,7 +96,7 @@ const ProductSearch = (props) => {
                   onClick={() => setSearchTerm(bikes)}
                   className="productSearchButton">BICYCLES</Button>
         }
-
+        </span>
       </div>
 
     <div className="productCards">

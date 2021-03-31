@@ -57,11 +57,16 @@
   }
   .manuals {
     width: 90%;
+    top: 25px;
   }
   .guide-dropdowns {
     h3 {
       font-size: 16px;
     }
+  }
+  #self-help-text {
+    width: 85%;
+    margin: 0 auto;
   }
 }
 
@@ -73,6 +78,12 @@
   position: absolute;
   left: 10%;
   display: inline-block;
+}
+
+@media screen and (max-width: 520px) {
+  .guide-dropdowns {
+    width: 90%;
+  }
 }
 
 .guide-extraHelp {
@@ -123,5 +134,21 @@
 @media screen and (max-width: 520px) {
   .user-dropdown {
     left: 60px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .guide-dropdown {
+    .label {
+      padding-right: 50px;
+    }
+  }
+  .user-dropdown {
+    .label {
+      padding-right: 50px;
+    }
+  }
+  .guide-extraHelp {
+    bottom: -180px;
   }
 }

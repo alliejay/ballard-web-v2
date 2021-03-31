@@ -8,6 +8,13 @@
   margin-right: 15px;
 }
 
+
+@media screen and (max-width: 675px) {
+  .productFilters {
+    display: block;
+  }
+}
+
 .productSearchContainer {
   margin-right: 20px;
 }
