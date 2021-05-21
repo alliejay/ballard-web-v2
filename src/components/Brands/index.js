@@ -19,7 +19,7 @@ const Brands = () => {
       {/*<h2 className="title">OUR BRANDS</h2>*/}
       <Row >
         <Col className="logoCol" ><img src={honda} className="brandLogo" id="honda" /></Col>
-        <Col className="logoCol" ><img src={yamaha} className="brandLogo" id="yamaha" /></Col>
+        {/*<Col className="logoCol" ><img src={yamaha} className="brandLogo" id="yamaha" /></Col>*/}
         <Col className="logoCol" ><img src={disney} className="brandLogo" id="disney" /></Col>
 
         <Col className="logoCol"><img src={seascooter} className="brandLogo" id="seascooter" /></Col>
