@@ -12,6 +12,18 @@
   }
 }
 
+#self-help-text {
+  margin: 0;
+}
+
+.guide-select {
+  width: 300px;
+}
+
+.secondPanel h2 {
+  margin: 0;
+}
+
 @media screen and (max-width: 1120px) {
   .manuals {
     width: 45%;
@@ -40,6 +52,9 @@
   .manuals {
     width: 70%;
   }
+  .guide-select {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 614px) {
@@ -53,7 +68,7 @@
   margin: auto;
   margin-top: 30px;
   position: absolute;
-  left: 10%;
+  //left: 10%;
   display: inline-block;
 }
 
@@ -77,9 +92,6 @@
     width: 85%;
     margin: 0 auto;
   }
-  .guide-dropdowns {
-    left: 2%;
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -93,7 +105,7 @@
 
 .guide-extraHelp {
   position: relative;
-  bottom: -190px;
+  bottom: -215px;
   margin: 0 auto;
   h3 {
     font-weight: 300;

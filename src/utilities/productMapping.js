@@ -43,6 +43,7 @@ const HONDA_EROS = [
     [productImage]: honda12vt,
     [walmartLink]: "https://www.walmart.com/ip/12-VOLT-HONDA-TALON-UTV-Honda-Official-Licensed-Product/577126686?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSdxJo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSdxJo0F:0Y0&sharedid=test",
     [assemblyGuide]: 'manuals/assembly/honda12v.pdf',
+    [assemblyVideo]: "https://youtu.be/Wi7dZhsW-Fs",
     [itemPosition]: 6
   },
   {
@@ -76,6 +77,7 @@ const YAMAHA_EROS = [
     [productImage]: yamaha12vt,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-Raptor-Battery-Powered-Ride-on-Black-Green-New-Custom-Graphic-Design/861364225",
     [assemblyGuide]: 'manuals/assembly/yamaha12v.pdf',
+    [assemblyVideo]: "https://youtu.be/W-vJ1iGNI0Q",
     [itemPosition]: 8
   },
   {
@@ -120,6 +122,7 @@ const DISNEY_EROS = [
     [productImage]: minnieMouse,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Minnie-Mouse-Mercedes-GLS-320-Battery-Powered-Ride-On/139212311?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSYXJo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSYXJo0F:0Y0&sharedid=test",
     [assemblyGuide]: "manuals/assembly/minnieMouse12v.pdf",
+    [assemblyVideo]: "https://youtu.be/YnjnAhHmBKI",
     [itemPosition]: 0
   },
   {
@@ -145,6 +148,7 @@ const THUNDER_TANK_EROS = [
     [productName]: "24 Volt Thunder Tank Ride-On With Working Cannon and Rotating Turret",
     [productImage]: thunderTank,
     [walmartLink]: "https://www.walmart.com/ip/NEW-WALMART-EXCLUSIVE-24-Volt-Thunder-Tank-Ride-On-With-Working-Cannon-and-Rotating-Turret/204394575?athcpid=204394575&athpgid=athenaItemPage&athcgid=null&athznid=PWVAV&athieid=v0&athstid=CS020&athguid=e917c4fe-007-175425342f7517&athancid=null&athena=true",
+    [assemblyVideo]: "https://youtu.be/XRsn3qAloWc",
     [itemPosition]: 7,
     [assemblyGuide]: 'manuals/assembly/thunder_tank.pdf'
   },
@@ -171,6 +175,7 @@ const BATMAN_EROS = [
     [productName]: "12V Batman Batmobile Battery Powered Ride On - Authentic THE BATMAN BATMOBILE design",
     [productImage]: batman12v,
     [walmartLink]: "https://www.walmart.com/ip/12V-Batman-Batmobile-Battery-Powered-Ride-On-Authentic-THE-BATMAN-BATMOBILE-design-Includes-RC-Motorcycle-for-Boys-Girls-Ages-3-and-up/883211469",
+    [assemblyVideo]: "https://youtu.be/oafzyJLNC8E",
     [itemPosition]: 0
   },
 ];
@@ -207,6 +212,7 @@ const MONSTER_JAM_EROS = [
     [productName]: "Monster Jam 24 Volt El Toro Loco Monster Truck that Blows Smoke",
     [productImage]: monsterJam24v,
     [walmartLink]: "https://www.walmart.com/ip/Monster-Jam-24-Volt-El-Toro-Loco-Monster-Truck-that-Blows-Smoke-For-Boys-Girls-Ages-3-and-up/379549900",
+    [assemblyVideo]: "https://youtu.be/RtnbYYehgv8",
     [itemPosition]: 0,
   },
   {
@@ -226,6 +232,7 @@ const HELLO_KITTY_EROS = [
     [productName]: 'Hello Kitty 12 Volt “Eats and Treats” Sweet Food Truck',
     [productImage]: helloKitty12v,
     [walmartLink]: "https://www.walmart.com/ip/Hello-Kitty12-Volt-Eats-and-Treats-Sweet-Food-Truck-Play-Center-Ride-On-for-Boys-Girls-Ages-3-and-up/127919099?athbdg=L1100",
+    [assemblyVideo]: "https://youtu.be/-XMiGdB1N8g",
     [itemPosition]: 0,
   }
 ];

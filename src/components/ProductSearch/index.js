@@ -57,7 +57,11 @@ const ProductSearch = (props) => {
           {
             item.dunhamLink && <a href={item.dunhamLink} target="new">Buy From Dunham's Sports</a>
           }
-        {item.assemblyGuide && <Link className="assemblyLink" to={item.assemblyGuide} target="new">View Assembly Guide</Link>}
+          {
+              item.assemblyVideo && <a href={item.assemblyVideo} target="_blank" className="assemblyLink">View Assembly Video</a>
+          }
+        {!item.assemblyVideo && item.assemblyGuide && <Link className="assemblyLink" to={item.assemblyGuide} target="new">View Assembly Guide</Link>}
+
         </div>
       </Card>
     }));

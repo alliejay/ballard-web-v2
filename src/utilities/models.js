@@ -147,3 +147,34 @@ export const manuals = [
     urlParam: "manuals/user/yamahaXYZ.pdf"
   },
 ];
+
+export const assemblyVideos = [
+  {
+    label: "12V Batman Batmobile Battery Powered Ride On",
+    value: "https://youtu.be/oafzyJLNC8E"
+  },
+  {
+    label: "Monster Jam 24 Volt El Toro Loco Monster Truck",
+    value: "https://youtu.be/RtnbYYehgv8"
+  },
+  {
+    label: 'Hello Kitty 12 Volt “Eats and Treats” Sweet Food Truck',
+    value: "https://youtu.be/-XMiGdB1N8g"
+  },
+  {
+    label: "12 Volt Yamaha Raptor Battery Powered Ride-on",
+    value: "https://youtu.be/W-vJ1iGNI0Q"
+  },
+  {
+    label: "Honda 12 Volt Talon UTV",
+    value: "https://youtu.be/Wi7dZhsW-Fs"
+  },
+  {
+    label: "12 Volt Minnie Mouse Mercedes GLS-320 Battery Powered Ride-On",
+    value: "https://youtu.be/YnjnAhHmBKI"
+  },
+  {
+    label: "24 Volt Thunder Tank Ride-On With Working Cannon and Rotating Turret",
+    value: "https://youtu.be/XRsn3qAloWc"
+  }
+]
