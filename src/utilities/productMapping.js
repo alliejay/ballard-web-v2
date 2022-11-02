@@ -1,23 +1,17 @@
 import React from 'react';
 import { forEach as _forEach, find as _find } from 'lodash';
-import honda6vt from '../img/products/honda-6vt.jpeg';
 import honda12vt from '../img/products/honda12vt.jpeg';
 import yamaha12vt from '../img/products/yamaha12vt.jpeg';
 import hondaGrizzly from '../img/products/hondaGrizzly12vt.jpeg';
 import disneyPrincess from '../img/products/disneyPrincess.jpeg';
-import disneyFrozen from '../img/products/disneyFrozen.jpeg';
-import disneySofia from '../img/products/disneySofia.jpeg';
 import minnieMouse from '../img/products/minnieMouse.jpeg';
 import thunderTank from '../img/products/thunderTank.jpeg';
 import disneyFrozen6 from '../img/products/disneyFrozen6.jpeg';
 import disneyFrozenScooter from '../img/products/disneyFrozenScooter.jpeg';
 import hondaScooter from '../img/products/honda6vtScooter.jpeg';
-import disneyFrozenSleigh from '../img/products/frozensleigh.jpeg';
 import batMobile from '../img/products/batmobile.jpeg';
 import batMobile6 from '../img/products/batmobile6vt.jpeg';
-import seaScooter from '../img/products/seascooter.jpeg';
-import yamahaXYZ from '../img/products/yamaha12vtXYZ.jpeg';
-import yamahaViking from '../img/products/yamahaViking.jpeg';
+// import seaScooter from '../img/products/seascooter.jpeg';
 import hondaBlack6 from '../img/products/hondaBlack6vt.jpeg';
 import hondaBlack12 from '../img/products/hondaBlack12.jpeg';
 import yamaha16in from '../img/products/yamaha16in.jpeg';
@@ -27,6 +21,10 @@ import batman12in from '../img/products/batman12in.jpeg';
 import wonderWoman16in from '../img/products/wonderWoman16in.jpeg';
 import columbiaTeton20 from '../img/products/columbiaTeton20.png';
 import columbiaHybrid700 from '../img/products/columbiaHybrid700.png';
+import monsterJam24v from "../img/products/monsterJam24v.jpeg";
+import monsterJam6v from "../img/products/monsterJam6v.jpeg";
+import helloKitty12v from "../img/products/helloKitty12v.jpeg";
+import batman12v from '../img/products/batmobile12v.jpeg';
 
 const productName = "productName";
 const productImage = "productImage";
@@ -85,18 +83,6 @@ const YAMAHA_EROS = [
     [productImage]: hondaGrizzly,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-Grizzly-Blue/673924141?athcpid=673924141&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=f2d02ede-007-1754252a8b7264&athancid=null&athena=true",
     [itemPosition]: 0
-  },
-  {
-    [productName]: "12 Volt Yamaha YXZ Battery Powered Ride-On",
-    [productImage]: yamahaXYZ,
-    [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-YXZ-Battery-Powered-Ride-On-Aggressive-Design-for-serious-Off-Road-Fun/55627504",
-    [itemPosition]: -1
-  },
-  {
-    [productName]: "6 Volt Yamaha Viking Battery Powered Ride-On",
-    [productImage]: yamahaViking,
-    [walmartLink]: "https://www.walmart.com/ip/6-Volt-Yamaha-Viking-Battery-Powered-Ride-On-Hours-of-fun-with-this-kid-size-UTV/52674911",
-    [itemPosition]: 0
   }
 ];
 
@@ -130,18 +116,6 @@ const DISNEY_EROS = [
     [itemPosition]: 3
   },
   {
-    [productName]: "Disney Frozen Convertible Car 6-Volt Battery-Powered Ride-On",
-    [productImage]: disneyFrozen,
-    [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Convertible-Car-6-Volt-Battery-Powered-Ride-On/37312935?athcpid=37312935&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=13236ddb-007-1754250813b751&athancid=null&athena=true",
-    [itemPosition]: 2
-  },
-  {
-    [productName]: "Disney Sofia the First Convertible Car 6-Volt Battery-Powered Ride-On",
-    [productImage]: disneySofia,
-    [walmartLink]: "https://www.walmart.com/ip/Disney-Sofia-the-First-Convertible-Car-6-Volt-Battery-Powered-Ride-On/25414430?athcpid=25414430&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=86379c4a-007-17542517cb31bc&athancid=null&athena=true",
-    [itemPosition]: 1
-  },
-  {
     [productName]: "12 Volt Minnie Mouse Mercedes GLS-320 Battery Powered Ride-On",
     [productImage]: minnieMouse,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Minnie-Mouse-Mercedes-GLS-320-Battery-Powered-Ride-On/139212311?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSYXJo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSYXJo0F:0Y0&sharedid=test",
@@ -159,12 +133,6 @@ const DISNEY_EROS = [
     [productImage]: disneyFrozenScooter,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Disney-Frozen-3-Wheel-Scooter-Battery-Powered-Ride-On/52674914?athcpid=52674914&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=27d5dfe0-007-1754253cdd895f&athancid=null&athena=true",
     [itemPosition]: 0
-  },
-  {
-    [productName]: "Disney Frozen Sleigh 12-Volt Battery Powered Ride-On",
-    [productImage]: disneyFrozenSleigh,
-    [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Sleigh-12-Volt-Battery-Powered-Ride-On-for-your-little-Elsa-and-Anna-Hours-of-Fun/440160665?athcpid=440160665&athpgid=athenaItemPage&athcgid=null&athznid=PWVAV&athieid=v0&athstid=CS020&athguid=e455f5e2-007-1754254c218768&athancid=null&athena=true",
-    [itemPosition]: -3
   }
 ];
 
@@ -199,6 +167,12 @@ const BATMAN_EROS = [
     [walmartLink]: "https://www.walmart.com/ip/Batman-Batmobile-6-Volt-Battery-Powered-Ride-On/53341544?athcpid=53341544&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=a155d614-008-17542590d9f64d&athancid=null&athena=true",
     [itemPosition]: 0
   },
+  {
+    [productName]: "12V Batman Batmobile Battery Powered Ride On - Authentic THE BATMAN BATMOBILE design",
+    [productImage]: batman12v,
+    [walmartLink]: "https://www.walmart.com/ip/12V-Batman-Batmobile-Battery-Powered-Ride-On-Authentic-THE-BATMAN-BATMOBILE-design-Includes-RC-Motorcycle-for-Boys-Girls-Ages-3-and-up/883211469",
+    [itemPosition]: 0
+  },
 ];
 
 //TODO change to DC_COMICS
@@ -228,18 +202,51 @@ const BATMAN_PRODUCTS = {
   [bikes]: BATMAN_BIKES
 };
 
-const SEA_SCOOTER_EROS = [
+const MONSTER_JAM_EROS = [
   {
-    [productName]: "12 Volt SEASCOOTER - Battery Powered Ride-On Water Toy",
-    [productImage]: seaScooter,
-    [walmartLink]: "https://www.walmart.com/ip/12-Volt-SEASCOOTER-Exciting-New-Wal-Mart-Exclusive-Battery-Powered-Ride-On-Water-Toy/945884402",
-    [itemPosition]: 9
+    [productName]: "Monster Jam 24 Volt El Toro Loco Monster Truck that Blows Smoke",
+    [productImage]: monsterJam24v,
+    [walmartLink]: "https://www.walmart.com/ip/Monster-Jam-24-Volt-El-Toro-Loco-Monster-Truck-that-Blows-Smoke-For-Boys-Girls-Ages-3-and-up/379549900",
+    [itemPosition]: 0,
   },
+  {
+    [productName]: "6 Volt Grave Digger Ride On Monster Truck with Authentic Monster Jam Graphics",
+    [productImage]: monsterJam6v,
+    [walmartLink]: "https://www.walmart.com/ip/6-Volt-Grave-Digger-Ride-On-Monster-Truck-with-Authentic-Monster-Jam-Graphics-for-Boys-Girls-Ages-18-36-months/289988419",
+    [itemPosition]: 0,
+  }
 ];
 
-const SEA_SCOOTER_PRODUCTS = {
-  [eros]: SEA_SCOOTER_EROS,
+const MONSTER_JAM_PRODUCTS = {
+  [eros]: MONSTER_JAM_EROS
 };
+
+const HELLO_KITTY_EROS = [
+  {
+    [productName]: 'Hello Kitty 12 Volt “Eats and Treats” Sweet Food Truck',
+    [productImage]: helloKitty12v,
+    [walmartLink]: "https://www.walmart.com/ip/Hello-Kitty12-Volt-Eats-and-Treats-Sweet-Food-Truck-Play-Center-Ride-On-for-Boys-Girls-Ages-3-and-up/127919099?athbdg=L1100",
+    [itemPosition]: 0,
+  }
+];
+
+const HELLO_KITTY_PRODUCTS = {
+  [eros]: HELLO_KITTY_EROS
+};
+
+// This may come back
+// const SEA_SCOOTER_EROS = [
+//   {
+//     [productName]: "12 Volt SEASCOOTER - Battery Powered Ride-On Water Toy",
+//     [productImage]: seaScooter,
+//     [walmartLink]: "https://www.walmart.com/ip/12-Volt-SEASCOOTER-Exciting-New-Wal-Mart-Exclusive-Battery-Powered-Ride-On-Water-Toy/945884402",
+//     [itemPosition]: 9
+//   },
+// ];
+//
+// const SEA_SCOOTER_PRODUCTS = {
+//   [eros]: SEA_SCOOTER_EROS,
+// };
 
 const COLUMBIA_BIKES = [
   {
@@ -266,7 +273,7 @@ const COLUMBIA_PRODUCTS = {
 export const PARENT_COMPANIES = [
   {
     name: "Action Wheels",
-    productList: [HONDA_PRODUCTS, YAMAHA_PRODUCTS, DISNEY_PRODUCTS, THUNDER_TANK_PRODUCTS, BATMAN_PRODUCTS, SEA_SCOOTER_PRODUCTS]
+    productList: [HONDA_PRODUCTS, YAMAHA_PRODUCTS, DISNEY_PRODUCTS, THUNDER_TANK_PRODUCTS, BATMAN_PRODUCTS, HELLO_KITTY_PRODUCTS, MONSTER_JAM_PRODUCTS]
   },
   {
     name: "Columbia",
@@ -288,13 +295,21 @@ export const BRANDS = [
     productList: [DISNEY_PRODUCTS]
   },
   {
+    name: "Hello Kitty",
+    productList: [HELLO_KITTY_PRODUCTS]
+  },
+  {
     name: "Honda",
     productList: [HONDA_PRODUCTS]
   },
   {
-    name: "SeaScooter",
-    productList: [SEA_SCOOTER_PRODUCTS]
+    name: "Monster Jam",
+    productList: [MONSTER_JAM_PRODUCTS]
   },
+  // {
+  //   name: "SeaScooter",
+  //   productList: [SEA_SCOOTER_PRODUCTS]
+  // },
   {
     name: "Thunder Tank",
     productList: [THUNDER_TANK_PRODUCTS]
